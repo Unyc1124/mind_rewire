@@ -1,0 +1,248 @@
+mind_rewire/ (project root)
+├─ .gitignore
+├─ .gitattributes
+├─ .editorconfig
+├─ .env.example
+├─ artisan
+├─ composer.json
+├─ composer.lock
+├─ package.json
+├─ package-lock.json
+├─ phpunit.xml
+├─ README.md
+├─ vite.config.js
+├─ htaccess_old
+├─ info.php
+├─ nknk.html
+├─ ses-smtp-user.20250528-115602_credentials.csv
+│
+├─ app/
+│  ├─ constant.php
+│  ├─ Console/
+│  │  └─ Kernel.php
+│  ├─ Exceptions/
+│  │  └─ Handler.php
+│  ├─ Helpers/
+│  │  └─ helper.php
+│  ├─ Http/
+│  │  ├─ Kernel.php
+│  │  ├─ Controllers/
+│  │  │  ├─ Controller.php
+│  │  │  ├─ HomeController.php
+│  │  │  ├─ MainSiteController.php
+│  │  │  ├─ PaymentController.php
+│  │  │  ├─ AdminController.php
+│  │  │  └─ Auth/ (Login/Register/Reset controllers)
+│  │  └─ Middleware/
+│  │     ├─ Authenticate.php
+│  │     ├─ EncryptCookies.php
+│  │     ├─ TrustHosts.php
+│  │     ├─ TrustProxies.php
+│  │     ├─ TrimStrings.php
+│  │     ├─ PreventRequestsDuringMaintenance.php
+│  │     ├─ RedirectIfAuthenticated.php
+│  │     ├─ VerifyCsrfToken.php
+│  │     └─ PageVariableReplace.php
+│  ├─ Livewire/
+│  │  └─ Booking.php
+│  ├─ Models/
+│  │  ├─ User.php
+│  │  ├─ Billing.php
+│  │  ├─ BookedTimeSlot.php
+│  │  ├─ Country.php
+│  │  ├─ State.php
+│  │  ├─ TherapyCategory.php
+│  │  ├─ Enquiry.php
+│  │  └─ NewsLetterSubscription.php
+│  └─ Providers/
+│     ├─ AppServiceProvider.php
+│     ├─ AuthServiceProvider.php
+│     ├─ BroadcastServiceProvider.php
+│     ├─ EventServiceProvider.php
+│     └─ RouteServiceProvider.php
+│
+├─ bootstrap/
+│  ├─ app.php
+│  └─ cache/
+│     └─ .gitignore
+│
+├─ config/
+│  ├─ app.php
+│  ├─ auth.php
+│  ├─ broadcasting.php
+│  ├─ cache.php
+│  ├─ cors.php
+│  ├─ database.php
+│  ├─ filesystems.php
+│  ├─ hashids.php
+│  ├─ hashing.php
+│  ├─ livewire.php
+│  ├─ log-viewer.php
+│  ├─ logging.php
+│  ├─ mail.php
+│  ├─ queue.php
+│  ├─ sanctum.php
+│  ├─ services.php
+│  └─ session.php
+│
+├─ database/
+│  ├─ factories/
+│  │  └─ UserFactory.php
+│  ├─ migrations/
+│  │  ├─ 2014_10_12_000000_create_users_table.php
+│  │  ├─ 2014_10_12_100000_create_password_resets_table.php
+│  │  ├─ 2014_10_12_100000_create_password_reset_tokens_table.php
+│  │  ├─ 2019_08_19_000000_create_failed_jobs_table.php
+│  │  ├─ 2019_12_14_000001_create_personal_access_tokens_table.php
+│  │  ├─ 2025_07_23_135550_create_therapy_categories_table.php
+│  │  ├─ 2025_07_25_153227_create_billings_table.php
+│  │  ├─ 2025_07_25_155011_create_booked_time_slots_table.php
+│  │  ├─ 2025_07_28_053821_create_enquiries_table.php
+│  │  └─ 2025_07_28_070755_create_news_letter_subscriptions_table.php
+│  └─ seeders/
+│     ├─ DatabaseSeeder.php
+│     └─ SuperAdmin.php
+│
+├─ lang/
+│  └─ vendor/
+│     └─ log-viewer/
+│        ├─ ar.json
+│        ├─ bg.json
+│        ├─ bn.json
+│        ├─ de.json
+│        ├─ ... (many i18n JSON files: en, es, fr, it, ja, ko, zh, etc.)
+│
+├─ public/
+│  ├─ index.php
+│  ├─ robots.txt
+│  ├─ error_log
+│  ├─ google31b9e2918d193698.html
+│  ├─ favicon.ico
+│  ├─ .htaccess
+│  ├─ assets/
+│  │  ├─ admin/
+│  │  │  ├─ css/
+│  │  │  │  ├─ style.css
+│  │  │  │  ├─ login.css
+│  │  │  │  └─ dashboard.css
+│  │  │  ├─ scss/
+│  │  │  │  └─ (many scss files)
+│  │  │  └─ images/
+│  │  │     └─ registration/, dashboard-header-assets/, side-menu-assets/ (many images)
+│  │  ├─ css/
+│  │  │  ├─ common.css
+│  │  │  ├─ contact-us/contact-us.css
+│  │  │  └─ (many page-specific css folders)
+│  │  ├─ scss/
+│  │  │  └─ (scss source files and partials)
+│  │  ├─ js/
+│  │  │  ├─ jquery-3.4.1.min.js
+│  │  │  ├─ owl.carousel.js
+│  │  │  ├─ custom.js
+│  │  │  └─ booking-form.js
+│  │  ├─ images/
+│  │  │  ├─ about-us/
+│  │  │  ├─ common-images/
+│  │  │  ├─ home/
+│  │  │  ├─ individual-therapy/
+│  │  │  ├─ student-wellness/
+│  │  │  ├─ success-stories/
+│  │  │  └─ videos/ (mp4 files)
+│  │  └─ fonts/
+│  │     ├─ BebasNeuePro-Bold.woff2
+│  │     └─ (other font files)
+│
+├─ public/assets summary: many images, fonts, css, scss, js grouped under `public/assets/`.
+│  Note: Binary assets (images/videos/fonts) omitted here for brevity — see folder for full list.
+│
+├─ resources/
+│  ├─ css/
+│  │  └─ app.css
+│  ├─ js/
+│  │  ├─ app.js
+│  │  └─ bootstrap.js
+│  ├─ sass/
+│  │  ├─ _variables.scss
+│  │  └─ app.scss
+│  └─ views/
+│     ├─ home.blade.php
+│     ├─ welcome.blade.php
+│     ├─ mainsite/
+│     │  ├─ about-us.blade.php
+│     │  ├─ booking.blade.php
+│     │  ├─ blogs.blade.php
+│     │  ├─ contact-us.blade.php
+│     │  ├─ privacy-policy.blade.php
+│     │  ├─ terms-of-service.blade.php
+│     │  └─ (many site pages)
+│     ├─ admin/
+│     │  ├─ dashboard.blade.php
+│     │  ├─ enquiry.blade.php
+│     │  ├─ booking.blade.php
+│     │  └─ news-letter.blade.php
+│     ├─ auth/
+│     │  ├─ login.blade.php
+│     │  ├─ register.blade.php
+│     │  └─ passwords/
+│     │     ├─ email.blade.php
+│     │     └─ reset.blade.php
+│     ├─ includes/
+│     │  ├─ head.blade.php
+│     │  ├─ header.blade.php
+│     │  ├─ footer.blade.php
+│     │  └─ admin/
+│     │     ├─ head.blade.php
+│     │     ├─ header.blade.php
+│     │     ├─ footer.blade.php
+│     │     └─ sidebar.blade.php
+│     └─ vendor/
+│        └─ log-viewer/
+│           └─ bootstrap-4/5 templates (dashboard, logs, show)
+│
+├─ routes/
+│  ├─ web.php
+│  ├─ admin.php
+│  ├─ api.php
+│  ├─ channels.php
+│  └─ console.php
+│
+├─ storage/
+│  ├─ app/
+│  │  └─ public/.gitignore
+│  ├─ framework/
+│  │  ├─ cache/.gitignore
+│  │  ├─ sessions/.gitignore
+│  │  ├─ views/.gitignore
+│  │  └─ testing/.gitignore
+│  └─ logs/
+│     └─ .gitignore
+│
+├─ tests/
+│  ├─ TestCase.php
+│  ├─ CreatesApplication.php
+│  ├─ Feature/
+│  │  └─ ExampleTest.php
+│  └─ Unit/
+│     └─ ExampleTest.php
+│
+├─ .github/
+│  └─ workflows/
+│     └─ deploy-to-cpanel.yml
+
+
+--- Quick notes for interns (where to add stuff)
+- Controllers: add new controllers to `app/Http/Controllers/`. If controller is auth-related, follow `app/Http/Controllers/Auth/`.
+- Models: add to `app/Models/` (Eloquent models). Create corresponding migration in `database/migrations/` when adding new tables.
+- Migrations: create new files in `database/migrations/` (timestamped). Run `php artisan migrate` locally.
+- Views: add frontend pages to `resources/views/mainsite/` or `resources/views/admin/` depending on usage. Use existing layout files in `resources/views/layouts/`.
+- Routes: add new routes to `routes/web.php` for site routes, `routes/admin.php` for admin routes, and `routes/api.php` for API endpoints.
+- Assets (CSS/JS): source files live in `resources/js/` and `resources/sass/`. Compiled/public assets are in `public/assets/`. Use `npm run dev` or `npm run build` (see `package.json`).
+- Config: app-wide settings go to `config/*.php`.
+- Environment: secrets and environment-specific values go into `.env` (do not commit). `.env.example` shows required keys.
+- Tests: add unit/feature tests under `tests/Unit` and `tests/Feature`.
+
+--- Tips for AI or tooling
+- The main entry points are `public/index.php` (web) and `artisan` (CLI). Framework is Laravel-style; autoloading follows PSR-4 (check `composer.json`).
+- For static assets, modify source files under `resources/` and compile with the toolchain (`npm`, `vite`).
+
+File created: `PROJECT_STRUCTURE.txt` at project root.
