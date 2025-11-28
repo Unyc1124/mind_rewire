@@ -75,7 +75,7 @@
                                 <h3>Our Address</h3>
                                 <div class="listtype">
                                     <a>
-                                        Mind Rewire, Park Ivory, Park Street, Wakad, Pune, Maharashtra, India -
+                                        Aditi Dubey, Park Ivory, Park Street, Wakad, Pune, Maharashtra, India -
                                         421501
                                     </a>
                                 </div>
