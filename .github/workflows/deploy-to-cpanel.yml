@@ -1,44 +1,27 @@
-name: Deploy to cPanel (via SSH, archive & copy)
+name: Deploy to cPanel (via SSH)
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Build (optional) — install composer/npm if needed
+      - name: Prepare deploy key
         run: |
-          # uncomment if you use composer/npm
-          # if [ -f composer.json ]; then composer install --no-dev --optimize-autoloader --no-interaction; fi
-          # if [ -f package.json ]; then npm ci && npm run build; fi
-          echo "Build step done"
+          mkdir -p ~/.ssh
+          echo "${{ secrets.CPANEL_DEPLOY_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+          ssh-keyscan -H sg2plzcpnl509270.prod.sin2.secureserver.net >> ~/.ssh/known_hosts
 
-      - name: Create deployment archive
-        run: |
-          TIMESTAMP=$(date +%s)
-          TARFILE="deploy_$TIMESTAMP.tar.gz"
-          # exclude .git and node_modules optionally
-          tar --exclude='.git' --exclude='node_modules' -czf $TARFILE .
-          echo "TARFILE=$TARFILE" >> $GITHUB_ENV
-
-      - name: Upload archive to server
-        uses: appleboy/scp-action@master
-        with:
-          host: sg2plzcpnl509270.prod.sin2.secureserver.net   # your cPanel host
-          username: ahvmt0d58za5                              # your cPanel username
-          key: ${{ secrets.CPANEL_DEPLOY_KEY }}
-          port: 22
-          source: ${{ env.TARFILE }}
-          target: /tmp/
-
-      - name: Extract archive and deploy on server
+      - name: Deploy to cPanel
         uses: appleboy/ssh-action@v0.1.10
         with:
           host: sg2plzcpnl509270.prod.sin2.secureserver.net
@@ -47,18 +30,13 @@ jobs:
           port: 22
           script: |
             set -e
-            TARFILE=$(basename "${{ env.TARFILE }}")
-            cd /home/ahvmt0d58za5 || exit 1
-            # backup current site (optional)
-            rm -rf /home/ahvmt0d58za5/public_html_backup || true
-            mv public_html public_html_backup || true
-            mkdir -p public_html
-            # extract uploaded tar into public_html
-            tar -xzf /tmp/$TARFILE -C public_html
-            # fix permissions (if needed)
-            find public_html -type f -exec chmod 644 {} \;
-            find public_html -type d -exec chmod 755 {} \;
-            # cleanup
-            rm /tmp/$TARFILE || true
+            cd /home/ahvmt0d58za5/public_html || exit 1
+            git fetch --all
+            git reset --hard origin/main
+            git clean -fd
+            # If you need composer, uncomment the next lines:
+            # if [ -f composer.json ]; then composer install --no-interaction --prefer-dist --optimize-autoloader; fi
+            # If you need npm build, uncomment:
+            # if [ -f package.json ]; then npm ci && npm run build; fi
 
 
