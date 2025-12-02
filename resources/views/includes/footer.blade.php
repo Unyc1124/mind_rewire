@@ -50,7 +50,7 @@
                                         transform="translate(-0.106 -0.104)" fill="#fff" />
                                 </g>
                             </svg>
-                            Park Ivory, Park Street, Wakad, Pune, Maharashtra, India - 411057
+                            Park Street, Wakad, Pune, Maharashtra, India - 411057
                         </a>
                     </li>
                 </ul>

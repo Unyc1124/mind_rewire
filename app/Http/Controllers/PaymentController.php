@@ -259,7 +259,7 @@ class PaymentController extends Controller
             $email_body = str_replace('{link_url_or_address}', 'https://meet.google.com/bso-gwoy-iui', $email_body);
         } elseif ($billing_details->bookedTimeSlots->therapy_mode == 'in-person') {
             $email_body = str_replace('{link_or_address}', 'Address', $email_body);
-            $email_body = str_replace('{link_url_or_address}', 'Mind Rewire, Park Ivory, Park Street, Wakad, Pune, Maharashtra, India - 411057', $email_body);
+            $email_body = str_replace('{link_url_or_address}', 'Mind Rewire, Park Street, Wakad, Pune, Maharashtra, India - 411057', $email_body);
         } else {
             $email_body = str_replace('{link_or_address}', 'Phone Number', $email_body);
             $email_body = str_replace('{link_url_or_address}', '+91 77580 23819', $email_body);

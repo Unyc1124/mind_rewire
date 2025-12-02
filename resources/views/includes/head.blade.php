@@ -21,7 +21,7 @@
             "telephone": "+91 7758023819",
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Park Ivory, Park Street, Wakad",
+                "streetAddress": "Park Street, Wakad",
                 "addressLocality": "Pune",
                 "addressRegion": "Maharashtra",
                 "postalCode": "411057",
