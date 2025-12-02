@@ -178,14 +178,8 @@
                     </div>
                     <div class="managed_by">
                         <p>
-                            Built in India | Managed by <a href="https://www.morismedia.in/">
-                                Moris Media</a>
+                            ✨ Built by Anand with ❤️
                         </p>
-                        <div class="mlogo">
-                            <a href="https://www.morismedia.in/">
-                                <img src="{{ url('assets/images/common-images/logo_moris_prpl.png') }}" alt="image" />
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
