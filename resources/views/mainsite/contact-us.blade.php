@@ -172,7 +172,7 @@
             <div class="custom_container">
                 <div class="maparea" data-aos="fade-up" data-aos-duration="1500">
                     <iframe loading="lazy"
-                        src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Mind%20Rewire%2C%20Park%20Ivory%2C%20Park%20Street%2C%20Wakad%2C%20Pune%2C%20Maharashtra%2C%20India%20-%20411057&t=&z=14&ie=UTF8&iwloc=B&output=embed">
+                        src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Mind%20Rewire%2C%20Park%20Street%2C%20Wakad%2C%20Pune%2C%20Maharashtra%2C%20India%20-%20411057&t=&z=14&ie=UTF8&iwloc=B&output=embed">
                     </iframe>
                 </div>
             </div>
