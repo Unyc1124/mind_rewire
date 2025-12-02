@@ -117,7 +117,7 @@
                             <strong class="deg">
                                 Psychologist | Founder, Mind Rewire | TedX Speaker
                             </strong>
-                            <span class="exp">14 + Years Of Experience</span>
+                            <span class="exp">15+ Years Of Experience</span>
                             <ul>
                                 <li>
                                     <div class="icon">

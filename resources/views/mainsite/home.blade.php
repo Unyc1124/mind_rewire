@@ -131,7 +131,7 @@
                 <ul>
                     <li data-aos="fade-up" data-aos-duration="1500">
                         <div class="number">
-                            <strong class="counter">11</strong>+
+                            <strong class="counter">15</strong>+
                         </div>
                         <p>Years Of Psychological Expertise</p>
                     </li>
