@@ -12,25 +12,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>Why You’re Not Overreacting | Nervous System Explained</title>
+<title>Why You’re Not Overreacting — Nervous System, Trauma & Healing</title>
 <meta name="description"
-    content="Your reactions aren't irrational—your nervous system remembers. Learn how past trauma shapes responses and how to heal through body-informed therapy.">
+    content="Explore how the nervous system stores trauma and why emotional reactions can feel overwhelming. Evidence-based, body-informed strategies from Mind Rewire psychologists to regulate stress and heal.">
 <meta name="keywords"
-    content="nervous system trauma, emotional overreaction, trauma response, somatic therapy, fight or flight, vagus nerve healing, CBT for triggers, Mind Rewire blog, healing anxiety, dysregulation therapy, nervous system explained">
+    content="nervous system trauma, somatic therapy, vagus nerve, trauma response, regulate anxiety, nervous system healing, Mind Rewire article">
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@skybridge" />
-<meta name="twitter:creator" content="@skybridge" />
-<meta name="twitter:title" content="Why You’re Not Overreacting | Nervous System Explained">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mindrewire" />
+<meta name="twitter:creator" content="@mindrewire" />
+<meta name="twitter:title" content="Why You’re Not Overreacting — Nervous System, Trauma & Healing">
 <meta name="twitter:description"
-    content="Your reactions aren't irrational—your nervous system remembers. Learn how past trauma shapes responses and how to heal through body-informed therapy.">
-<meta name="twitter:image" content="{{ url('favicon.png') }}">
+    content="Understand how trauma shapes the nervous system and learn practical regulation techniques from Mind Rewire psychologists.">
+<meta name="twitter:image" content="{{ url('assets/images/common-images/nervous-system-og.png') }}">
 
-<meta property="og:url" content="{{ url('/') }}" />
+<meta property="og:url" content="{{ url()->current() }}" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Why You’re Not Overreacting | Nervous System Explained" />
+<meta property="og:title" content="Why You’re Not Overreacting — Nervous System, Trauma & Healing" />
 <meta property="og:description"
-    content="Your reactions aren't irrational—your nervous system remembers. Learn how past trauma shapes responses and how to heal through body-informed therapy." />
+    content="Understand how trauma shapes the nervous system and learn practical regulation techniques from Mind Rewire psychologists." />
 @stop
 
 @section('css')

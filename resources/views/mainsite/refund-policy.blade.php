@@ -12,25 +12,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>Refund Policy | Mind Rewire</title>
+<title>Refund & Cancellation Policy | Mind Rewire</title>
 <meta name="description"
-    content="Read Mind Rewire’s policy on cancellations, missed sessions, and product refunds. We aim to offer fairness while maintaining the integrity of our wellness services.">
+    content="Mind Rewire refund and cancellation policy for therapy sessions and product orders. Clear, fair terms for missed sessions, rescheduling and product returns — designed to protect clients and practitioners.">
 <meta name="keywords"
-    content="therapy refund policy, missed session charges, counselling cancellation terms, Mind Rewire refund terms, UNTANGLE product returns, mental wellness service policy, online therapy refund, appointment reschedule terms">
+    content="refund policy therapy, cancellation policy Mind Rewire, missed session refund, session reschedule terms, UNTANGLE product refund">
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@skybridge" />
-<meta name="twitter:creator" content="@skybridge" />
-<meta name="twitter:title" content="Refund Policy | Mind Rewire">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mindrewire" />
+<meta name="twitter:creator" content="@mindrewire" />
+<meta name="twitter:title" content="Refund & Cancellation Policy | Mind Rewire">
 <meta name="twitter:description"
-    content="Read Mind Rewire’s policy on cancellations, missed sessions, and product refunds. We aim to offer fairness while maintaining the integrity of our wellness services.">
-<meta name="twitter:image" content="{{ url('favicon.png') }}">
+    content="Mind Rewire refund and cancellation policy for therapy sessions and product orders. Clear, fair terms for missed sessions, rescheduling and product returns.">
+<meta name="twitter:image" content="{{ url('assets/images/common-images/refund-og.png') }}">
 
-<meta property="og:url" content="{{ url('/') }}" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Refund Policy | Mind Rewire" />
+<meta property="og:url" content="{{ url()->current() }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Refund & Cancellation Policy | Mind Rewire" />
 <meta property="og:description"
-    content="Read Mind Rewire’s policy on cancellations, missed sessions, and product refunds. We aim to offer fairness while maintaining the integrity of our wellness services." />
+    content="Mind Rewire refund and cancellation policy for therapy sessions and product orders. Clear, fair terms for missed sessions, rescheduling and product returns." />
 @stop
 
 @section('css')

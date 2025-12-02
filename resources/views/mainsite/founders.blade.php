@@ -12,25 +12,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>Meet the Founders of Mind Rewire – Sumedha & Anand</title>
+<title>Founders — Sumedha & Anand | Mind Rewire (Psychologists in Pune)</title>
 <meta name="description"
-    content="Learn how Sumedha and Anand combined clinical psychology, trauma recovery, and systems thinking to build Mind Rewire—a modern mental wellness platform that balances science, empathy, and emotional clarity.">
+    content="Meet Sumedha (Psychologist) and Anand—founders of Mind Rewire. Learn about their clinical expertise, trauma-informed approaches, and 15+ years delivering therapy, counselling and wellness programs from Pune, India.">
 <meta name="keywords"
-    content="Sumedha Mind Rewire, founder therapist India, trauma psychologist, CBT NLP expert, Anand Singh co-founder, AI in mental health, psychology meets technology, Mind Rewire story, emotional architecture">
+    content="founders Mind Rewire, Sumedha psychologist Pune, Anand co-founder, mental health founders India, psychologist founders Pune">
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@skybridge" />
-<meta name="twitter:creator" content="@skybridge" />
-<meta name="twitter:title" content="Meet the Founders of Mind Rewire – Sumedha & Anand">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mindrewire" />
+<meta name="twitter:creator" content="@mindrewire" />
+<meta name="twitter:title" content="Founders — Sumedha & Anand | Mind Rewire (Psychologists in Pune)">
 <meta name="twitter:description"
-    content="Learn how Sumedha and Anand combined clinical psychology, trauma recovery, and systems thinking to build Mind Rewire—a modern mental wellness platform that balances science, empathy, and emotional clarity.">
-<meta name="twitter:image" content="{{ url('favicon.png') }}">
+    content="Meet Sumedha and Anand: clinical psychologist-led founders delivering trauma-informed therapy and mental wellness programs from Pune with 15+ years experience.">
+<meta name="twitter:image" content="{{ url('assets/images/common-images/founders-og.png') }}">
 
-<meta property="og:url" content="{{ url('/') }}" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Meet the Founders of Mind Rewire – Sumedha & Anand" />
+<meta property="og:url" content="{{ url()->current() }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Founders — Sumedha & Anand | Mind Rewire (Psychologists in Pune)" />
 <meta property="og:description"
-    content="Learn how Sumedha and Anand combined clinical psychology, trauma recovery, and systems thinking to build Mind Rewire—a modern mental wellness platform that balances science, empathy, and emotional clarity." />
+    content="Meet Sumedha and Anand: clinical psychologist-led founders delivering trauma-informed therapy and mental wellness programs from Pune with 15+ years experience." />
 @stop
 
 

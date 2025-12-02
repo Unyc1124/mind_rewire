@@ -12,25 +12,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>Mind Rewire Blogs | Insights on Mental Wellness & Healing</title>
+<title>Mind Rewire Blog — Psychologist in Pune | Anxiety, Depression & Counselling Articles</title>
 <meta name="description"
-    content="Explore expert articles, personal stories, and science-backed tips on mental health, emotional resilience, and self-healing at the Mind Rewire blog hub.">
+    content="Read articles from Mind Rewire — psychologists in Pune — on anxiety, depression, trauma recovery, child & teen counselling, and practical therapy tips. Evidence-based resources and lived-experience insights.">
 <meta name="keywords"
-    content="Mind Rewire, mental health blogs, emotional wellness, self-healing, mindfulness tips, trauma healing, therapy insights, wellness articles, personal growth, anxiety help, stress management, mental clarity, psychological tips, cognitive health, healing journey">
+    content="mental health blog Pune, anxiety articles, depression help, therapy tips Pune, counsellor blog, child counselling articles, trauma recovery blog">
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@skybridge" />
-<meta name="twitter:creator" content="@skybridge" />
-<meta name="twitter:title" content="Mind Rewire Blogs | Insights on Mental Wellness & Healing">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mindrewire" />
+<meta name="twitter:creator" content="@mindrewire" />
+<meta name="twitter:title" content="Mind Rewire Blog — Psychologist in Pune | Anxiety, Depression & Counselling Articles">
 <meta name="twitter:description"
-    content="Explore expert articles, personal stories, and science-backed tips on mental health, emotional resilience, and self-healing at the Mind Rewire blog hub.">
-<meta name="twitter:image" content="{{ url('favicon.png') }}">
+    content="Practical, evidence-based articles on anxiety, depression, trauma and counselling from Mind Rewire — psychologists in Pune with 15+ years clinical experience.">
+<meta name="twitter:image" content="{{ url('assets/images/common-images/blogs-og.png') }}">
 
-<meta property="og:url" content="{{ url('/') }}" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Mind Rewire Blogs | Insights on Mental Wellness & Healing" />
+<meta property="og:url" content="{{ url()->current() }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Mind Rewire Blog — Psychologist in Pune | Anxiety, Depression & Counselling Articles" />
 <meta property="og:description"
-    content="Explore expert articles, personal stories, and science-backed tips on mental health, emotional resilience, and self-healing at the Mind Rewire blog hub." />
+    content="Practical, evidence-based articles on anxiety, depression, trauma and counselling from Mind Rewire — psychologists in Pune with 15+ years clinical experience." />
 @stop
 
 @section('css')

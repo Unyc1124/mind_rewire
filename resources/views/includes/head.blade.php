@@ -1,6 +1,77 @@
 <link rel="icon" href="{{ version_url('assets/images/favicon.png') }}" type="image/x-icon">
 <meta property="og:image" content="{{ version_url('assets/images/favicon.png') }}" />
 
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="{{ url()->current() }}" />
+<meta property="og:site_name" content="Mind Rewire" />
+<meta property="og:url" content="{{ url()->current() }}" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "LocalBusiness",
+            "name": "Mind Rewire",
+            "image": "{{ url('assets/images/common-images/favicon.png') }}",
+            "@id": "{{ url('/') }}",
+            "url": "{{ url('/') }}",
+            "telephone": "+91 7758023819",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Park Ivory, Park Street, Wakad",
+                "addressLocality": "Pune",
+                "addressRegion": "Maharashtra",
+                "postalCode": "411057",
+                "addressCountry": "IN"
+            },
+            "sameAs": ["https://www.mind-rewire.com"],
+            "contactPoint": [
+                {
+                    "@type": "ContactPoint",
+                    "telephone": "+91 7758023819",
+                    "contactType": "Customer Service",
+                    "areaServed": "IN",
+                    "availableLanguage": ["en"]
+                }
+            ],
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                    ],
+                    "opens": "00:00",
+                    "closes": "23:59",
+                    "comment": "By appointment — on call confirmation"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "name": "Sumedha Singh",
+            "jobTitle": "Psychologist",
+            "url": "{{ url('founders') }}"
+        },
+        {
+            "@type": "Person",
+            "name": "Anand Singh",
+            "jobTitle": "Co-founder",
+            "url": "https://www.linkedin.com/in/anand-singh-286a0a50/",
+            "sameAs": ["https://www.linkedin.com/in/anand-singh-286a0a50/"]
+        }
+    ]
+}
+</script>
+
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

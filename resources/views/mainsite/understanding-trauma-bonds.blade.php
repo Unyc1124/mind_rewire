@@ -12,25 +12,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>Understanding Trauma Bonds | Break Free from Toxic Cycles</title>
+<title>Understanding Trauma Bonds — Break Free from Toxic Cycles</title>
 <meta name="description"
-    content="Trauma bonds can feel like love—but they’re rooted in survival patterns. Learn how to recognize, understand, and heal from toxic emotional attachments.">
+    content="Learn to recognise trauma bonds and break free with trauma-informed strategies. Mind Rewire (Pune) offers guidance for recovery using nervous-system-aware therapy and counselling.">
 <meta name="keywords"
-    content="trauma bonds, toxic relationships, emotional attachment, trauma response, healing trauma bond, Mind Rewire therapy, break trauma cycles, nervous system healing, attachment patterns, somatic therapy, relationship trauma">
+    content="trauma bonds Pune, toxic relationship help, break trauma bond, attachment trauma counselling Pune, trauma-informed therapy">
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@skybridge" />
-<meta name="twitter:creator" content="@skybridge" />
-<meta name="twitter:title" content="Understanding Trauma Bonds | Break Free from Toxic Cycles">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mindrewire" />
+<meta name="twitter:creator" content="@mindrewire" />
+<meta name="twitter:title" content="Understanding Trauma Bonds — Break Free from Toxic Cycles">
 <meta name="twitter:description"
-    content="Trauma bonds can feel like love—but they’re rooted in survival patterns. Learn how to recognize, understand, and heal from toxic emotional attachments.">
-<meta name="twitter:image" content="{{ url('favicon.png') }}">
+    content="Recognise and heal trauma bonds with trauma-informed approaches. Advice from Mind Rewire psychologists in Pune with 15+ years clinical experience.">
+<meta name="twitter:image" content="{{ url('assets/images/common-images/trauma-bonds-og.png') }}">
 
-<meta property="og:url" content="{{ url('/') }}" />
+<meta property="og:url" content="{{ url()->current() }}" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Understanding Trauma Bonds | Break Free from Toxic Cycles" />
+<meta property="og:title" content="Understanding Trauma Bonds — Break Free from Toxic Cycles" />
 <meta property="og:description"
-    content="Trauma bonds can feel like love—but they’re rooted in survival patterns. Learn how to recognize, understand, and heal from toxic emotional attachments." />
+    content="Recognise and heal trauma bonds with trauma-informed approaches. Advice from Mind Rewire psychologists in Pune with 15+ years clinical experience." />
 @stop
 
 @section('css')

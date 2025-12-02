@@ -12,25 +12,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>How to Help a Child Who Shuts Down | Mind Rewire Guide</title>
+<title>How to Help a Child Who Shuts Down | Child Counselling Tips — Mind Rewire (Pune)</title>
 <meta name="description"
-    content="Understand why children shut down emotionally and how to respond with care. Learn trauma-aware tips to support your child’s safety and emotional expression.">
+    content="Practical, trauma-informed guidance to support children who shut down emotionally. Tips for parents and caregivers from Mind Rewire psychologists in Pune with 15+ years clinical experience.">
 <meta name="keywords"
-    content="child shuts down, emotional shutdown kids, trauma in children, parenting tips, child safety nervous system, gentle parenting, Mind Rewire therapy, emotional regulation, kids mental health, support withdrawn child, trauma-informed parenting">
+    content="child shutting down, child counselling Pune, trauma-informed parenting, emotional regulation children, child therapy Pune">
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@skybridge" />
-<meta name="twitter:creator" content="@skybridge" />
-<meta name="twitter:title" content="How to Help a Child Who Shuts Down | Mind Rewire Guide">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mindrewire" />
+<meta name="twitter:creator" content="@mindrewire" />
+<meta name="twitter:title" content="How to Help a Child Who Shuts Down | Child Counselling Tips — Mind Rewire (Pune)">
 <meta name="twitter:description"
-    content="Understand why children shut down emotionally and how to respond with care. Learn trauma-aware tips to support your child’s safety and emotional expression.">
-<meta name="twitter:image" content="{{ url('favicon.png') }}">
+    content="Practical, trauma-informed guidance to support children who shut down emotionally. Tips for parents and caregivers from Mind Rewire psychologists in Pune.">
+<meta name="twitter:image" content="{{ url('assets/images/common-images/child-shut-down-og.png') }}">
 
-<meta property="og:url" content="{{ url('/') }}" />
+<meta property="og:url" content="{{ url()->current() }}" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="How to Help a Child Who Shuts Down | Mind Rewire Guide" />
+<meta property="og:title" content="How to Help a Child Who Shuts Down | Child Counselling Tips — Mind Rewire (Pune)" />
 <meta property="og:description"
-    content="Understand why children shut down emotionally and how to respond with care. Learn trauma-aware tips to support your child’s safety and emotional expression." />
+    content="Practical, trauma-informed guidance to support children who shut down emotionally. Tips for parents and caregivers from Mind Rewire psychologists in Pune." />
 @stop
 
 @section('css')

@@ -12,25 +12,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>Contact Us | Mind Rewire Support</title>
+<title>Contact Mind Rewire — Psychologists in Pune | Support & Enquiries</title>
 <meta name="description"
-    content="Have questions about therapy, career counselling, or our UNTANGLE™ decks? Reach out to Mind Rewire for direct support, session guidance, or partnership inquiries.">
+    content="Contact Mind Rewire (Pune) for therapy, counselling, corporate wellness or UNTANGLE™ product enquiries. Our psychologists bring 15+ years of clinical experience — online and in-person support available.">
 <meta name="keywords"
-    content="therapy contact India, mental health enquiry, Mind Rewire support, counselling help, book a session Mind Rewire, UNTANGLE card support, connect with psychologist, emotional wellness services India, trauma therapy help, contact Sumedha Mind Rewire, corporate wellness queries">
+    content="contact psychologist Pune, therapy enquiries Pune, counselling support India, Mind Rewire contact, book session Pune, mental health support Pune">
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@skybridge" />
-<meta name="twitter:creator" content="@skybridge" />
-<meta name="twitter:title" content="Contact Us | Mind Rewire Support">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mindrewire" />
+<meta name="twitter:creator" content="@mindrewire" />
+<meta name="twitter:title" content="Contact Mind Rewire — Psychologists in Pune">
 <meta name="twitter:description"
-    content="Have questions about therapy, career counselling, or our UNTANGLE™ decks? Reach out to Mind Rewire for direct support, session guidance, or partnership inquiries.">
-<meta name="twitter:image" content="{{ url('favicon.png') }}">
+    content="Reach Mind Rewire for therapy, counseling, or partnerships. Psychologists in Pune with 15+ years clinical experience — online and in-person sessions available.">
+<meta name="twitter:image" content="{{ url('assets/images/common-images/contact-og-image.png') }}">
 
-<meta property="og:url" content="{{ url('/') }}" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Contact Us | Mind Rewire Support" />
+<meta property="og:url" content="{{ url()->current() }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Contact Mind Rewire — Psychologists in Pune" />
 <meta property="og:description"
-    content="Have questions about therapy, career counselling, or our UNTANGLE™ decks? Reach out to Mind Rewire for direct support, session guidance, or partnership inquiries." />
+    content="Reach Mind Rewire for therapy, counseling, or partnerships. Psychologists in Pune with 15+ years clinical experience — online and in-person sessions available." />
 @stop
 
 @section('css')
@@ -69,7 +69,7 @@
                     <ul>
                         <li data-aos="fade-up" data-aos-duration="1500">
                             <div class="imgbox">
-                                <img src="{{ url('assets/images/contact-us/img_contact1.png')}}" alt="image" />
+                                <img src="{{ url('assets/images/contact-us/img_contact1.png')}}" alt="Contact Mind Rewire — Psychologist in Pune" />
                             </div>
                             <div class="textbox">
                                 <h3>Our Address</h3>
@@ -83,7 +83,7 @@
                         </li>
                         <li data-aos="fade-up" data-aos-duration="1500">
                             <div class="imgbox">
-                                <img src="{{ url('assets/images/contact-us/img_contact2.png')}}" alt="image" />
+                                <img src="{{ url('assets/images/contact-us/img_contact2.png')}}" alt="Email and phone support — Mind Rewire" />
                             </div>
                             <div class="textbox">
                                 <h3>Contact Details</h3>
@@ -127,7 +127,7 @@
                         </li>
                         <li data-aos="fade-up" data-aos-duration="1500">
                             <div class="imgbox">
-                                <img src="{{ url('assets/images/contact-us/img_contact3.png')}}" alt="image" />
+                                <img src="{{ url('assets/images/contact-us/img_contact3.png')}}" alt="Visit Mind Rewire clinic — Wakad, Pune" />
                             </div>
                             <div class="textbox">
                                 <h3>Working Hours</h3>

@@ -12,25 +12,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Connect with Mind Rewire | Therapy & Wellness Enquiry</title>
+    <title>Connect with Mind Rewire | Therapy & Wellness Enquiry — Psychologists in Pune</title>
     <meta name="description"
-        content="Reach out to Mind Rewire for therapy, coaching & wellness sessions. Submit your mental health query & start your journey to clarity and healing today.">
+        content="Contact Mind Rewire (Pune) to enquire about therapy, coaching or corporate wellness. Our psychologists have 15+ years clinical experience offering online and in-person support.">
     <meta name="keywords"
-        content="Mind Rewire, mental health enquiry, therapy consultation, trauma healing, career counselling, Pune therapy, wellness programs, coaching sessions, emotional clarity, individual therapy, mental wellness India">
+        content="contact psychologist Pune, therapy enquiry Pune, counselling enquiry India, book consultation Pune, Mind Rewire enquiry">
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@skybridge" />
-    <meta name="twitter:creator" content="@skybridge" />
-    <meta name="twitter:title" content="Connect with Mind Rewire | Therapy & Wellness Enquiry">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@mindrewire" />
+    <meta name="twitter:creator" content="@mindrewire" />
+    <meta name="twitter:title" content="Connect with Mind Rewire | Therapy & Wellness Enquiry — Psychologists in Pune">
     <meta name="twitter:description"
-        content="Reach out to Mind Rewire for therapy, coaching & wellness sessions. Submit your mental health query & start your journey to clarity and healing today.">
-    <meta name="twitter:image" content="{{ url('favicon.png') }}">
+        content="Contact Mind Rewire (Pune) to enquire about therapy, coaching or corporate wellness. Online and in-person sessions available with 15+ years clinical experience.">
+    <meta name="twitter:image" content="{{ url('assets/images/common-images/contact-og-image.png') }}">
 
-    <meta property="og:url" content="{{ url('/') }}" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Connect with Mind Rewire | Therapy & Wellness Enquiry" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Connect with Mind Rewire | Therapy & Wellness Enquiry — Psychologists in Pune" />
     <meta property="og:description"
-        content="Reach out to Mind Rewire for therapy, coaching & wellness sessions. Submit your mental health query & start your journey to clarity and healing today." />
+        content="Contact Mind Rewire (Pune) to enquire about therapy, coaching or corporate wellness. Online and in-person sessions available with 15+ years clinical experience." />
 @stop
 
 @section('css')

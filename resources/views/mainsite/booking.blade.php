@@ -12,25 +12,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Book Your Session | Mind Rewire Mental Wellness Programs</title>
+    <title>Book Your Session | Mind Rewire — Psychologists in Pune</title>
     <meta name="description"
-        content="Schedule your personalized Mind Rewire session today. Choose from therapy, coaching, or consultation for your mental wellness journey. Quick & easy booking.">
+        content="Book therapy, counselling or coaching with Mind Rewire (Pune). Online & in-person sessions available with psychologists holding 15+ years clinical experience. Quick, secure booking for anxiety, trauma, child & teen counselling.">
     <meta name="keywords"
-        content="Mind Rewire, mental wellness, therapy booking, coaching session, mental health, online therapy, self-growth, emotional healing, counseling, mindfulness, stress relief, trauma recovery, life coaching, therapy consultation, mental clarity">
+        content="book therapy Pune, counselling booking Pune, book psychologist Pune, online therapy India, Mind Rewire booking, child counselling booking">
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@skybridge" />
-    <meta name="twitter:creator" content="@skybridge" />
-    <meta name="twitter:title" content="Book Your Session | Mind Rewire Mental Wellness Programs">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@mindrewire" />
+    <meta name="twitter:creator" content="@mindrewire" />
+    <meta name="twitter:title" content="Book Your Session | Mind Rewire — Psychologists in Pune">
     <meta name="twitter:description"
-        content="Schedule your personalized Mind Rewire session today. Choose from therapy, coaching, or consultation for your mental wellness journey. Quick & easy booking.">
-    <meta name="twitter:image" content="{{ url('favicon.png') }}">
+        content="Book therapy, counselling or coaching with Mind Rewire (Pune). Online & in-person sessions available with psychologists holding 15+ years clinical experience.">
+    <meta name="twitter:image" content="{{ url('assets/images/common-images/booking-og.png') }}">
 
-    <meta property="og:url" content="{{ url('/') }}" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Book Your Session | Mind Rewire Mental Wellness Programs" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Book Your Session | Mind Rewire — Psychologists in Pune" />
     <meta property="og:description"
-        content="Schedule your personalized Mind Rewire session today. Choose from therapy, coaching, or consultation for your mental wellness journey. Quick & easy booking." />
+        content="Book therapy, counselling or coaching with Mind Rewire (Pune). Online & in-person sessions available with psychologists holding 15+ years clinical experience." />
 @stop
 
 @section('css')

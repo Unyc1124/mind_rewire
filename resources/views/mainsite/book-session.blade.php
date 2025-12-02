@@ -12,25 +12,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Book a Therapy or Counselling Session | Mind Rewire</title>
+    <title>Book a Therapy or Counselling Session | Psychologist in Pune — Mind Rewire</title>
     <meta name="description"
-        content="Book a 1:1 therapy, coaching, or career counselling session with Mind Rewire’s certified experts. Choose your service, match with a therapist, schedule online, and confirm via instant email/SMS.">
+        content="Book a therapy or counselling session with Mind Rewire — psychologists in Pune offering anxiety, depression, trauma, child & teen counselling. 15+ years clinical experience, online and in-person slots available.">
     <meta name="keywords"
-        content="book therapy India, counselling appointment online, match with therapist, career counselling slot, trauma therapy booking, psychologist scheduling, Calendly mental health, online therapist India, pay for therapy session">
+        content="book therapy Pune, psychologist Pune booking, counselling appointment Pune, online therapy India, child counselling booking, anxiety therapy Pune">
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@skybridge" />
-    <meta name="twitter:creator" content="@skybridge" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@mindrewire" />
+    <meta name="twitter:creator" content="@mindrewire" />
     <meta name="twitter:title" content="Book a Therapy or Counselling Session | Mind Rewire">
     <meta name="twitter:description"
-        content="Book a 1:1 therapy, coaching, or career counselling session with Mind Rewire’s certified experts. Choose your service, match with a therapist, schedule online, and confirm via instant email/SMS.">
-    <meta name="twitter:image" content="{{ url('favicon.png') }}">
+        content="Book 1:1 therapy with experienced psychologists in Pune — anxiety, trauma, child & teen counselling. 15+ years clinical experience.">
+    <meta name="twitter:image" content="{{ url('assets/images/common-images/book-og-image.png') }}">
 
-    <meta property="og:url" content="{{ url('/') }}" />
-    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:type" content="website" />
     <meta property="og:title" content="Book a Therapy or Counselling Session | Mind Rewire" />
     <meta property="og:description"
-        content="Book a 1:1 therapy, coaching, or career counselling session with Mind Rewire’s certified experts. Choose your service, match with a therapist, schedule online, and confirm via instant email/SMS." />
+        content="Book 1:1 therapy with experienced psychologists in Pune — anxiety, trauma, child & teen counselling. 15+ years clinical experience." />
 @stop
 
 @section('css')
@@ -109,7 +109,7 @@
 
                 <div class="doctor_details">
                     <div class="imgbox" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="{{ url('assets/images/book-session/img_sumedha_singh.png') }}" alt="image" />
+                        <img src="{{ url('assets/images/book-session/img_sumedha_singh.png') }}" alt="Sumedha Singh — Psychologist, Founder of Mind Rewire" />
                     </div>
                     <div class="textbox" data-aos="fade-up" data-aos-duration="1500">
                         <div class="b_row">

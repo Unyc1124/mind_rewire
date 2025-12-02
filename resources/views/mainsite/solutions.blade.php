@@ -12,25 +12,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>Mind Rewire Solutions – Therapy, Counselling, Wellness Programs & More</title>
+<title>Therapy & Mental Health Solutions | Mind Rewire — Psychologist in Pune</title>
 <meta name="description"
-    content="Explore Mind Rewire’s full spectrum of solutions—from trauma-informed therapy and career counselling to student mental health, corporate wellness, school programs, and psychological assessments. Science-backed, empathy-driven.">
+    content="Therapy, counselling, school programs, corporate wellness and psychological assessments from Mind Rewire — psychologists in Pune with 15+ years clinical experience. Evidence-based, trauma-informed care for children, teens and adults.">
 <meta name="keywords"
-    content="mental health solutions India, therapy coaching services, student counselling programs, trauma recovery therapy, career counselling tests, corporate mental wellness India, school emotional programs, CBT counselling, psychological assessments online">
+    content="therapy Pune, counselling Pune, psychological assessments Pune, corporate wellness Pune, school mental health Pune, trauma therapy Pune">
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@skybridge" />
-<meta name="twitter:creator" content="@skybridge" />
-<meta name="twitter:title" content="Mind Rewire Solutions – Therapy, Counselling, Wellness Programs & More">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mindrewire" />
+<meta name="twitter:creator" content="@mindrewire" />
+<meta name="twitter:title" content="Therapy & Mental Health Solutions | Mind Rewire — Psychologist in Pune">
 <meta name="twitter:description"
-    content="Explore Mind Rewire’s full spectrum of solutions—from trauma-informed therapy and career counselling to student mental health, corporate wellness, school programs, and psychological assessments. Science-backed, empathy-driven.">
-<meta name="twitter:image" content="{{ url('favicon.png') }}">
+    content="Therapy, counselling, school programs and assessments from Mind Rewire — psychologists in Pune with 15+ years experience.">
+<meta name="twitter:image" content="{{ url('assets/images/common-images/solutions-og.png') }}">
 
-<meta property="og:url" content="{{ url('/') }}" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Mind Rewire Solutions – Therapy, Counselling, Wellness Programs & More" />
+<meta property="og:url" content="{{ url()->current() }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Therapy & Mental Health Solutions | Mind Rewire — Psychologist in Pune" />
 <meta property="og:description"
-    content="Explore Mind Rewire’s full spectrum of solutions—from trauma-informed therapy and career counselling to student mental health, corporate wellness, school programs, and psychological assessments. Science-backed, empathy-driven." />
+    content="Therapy, counselling, school programs and assessments from Mind Rewire — psychologists in Pune with 15+ years experience." />
 @stop
 
 @section('css')

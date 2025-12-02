@@ -12,25 +12,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>Psychological Assessments for Students, Parents & Professionals | Mind Rewire</title>
+<title>Psychological Assessments in Pune | EQ, Aptitude & Behavioural Testing — Mind Rewire</title>
 <meta name="description"
-    content="Get clarity through aptitude tests, EQ mapping, interest profiling, focus tracking, and behavioral analysis—delivered with expert interpretation. For schools, individuals, and organizations. Online & offline formats available.">
+    content="Psychological assessments in Pune: aptitude, EQ mapping, behavioural analysis and career interest testing with expert interpretation. For schools, students, parents and professionals — online and in-person options available.">
 <meta name="keywords"
-    content="psychological assessment India, student aptitude test, EQ profiling, behavioral assessment, career interest test, parent-child evaluation, school psychology tools, online psychometric test, personality profiling India, focus assessment students">
+    content="psychological assessment Pune, EQ assessment Pune, aptitude test Pune, school psychology Pune, career interest test Pune">
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@skybridge" />
-<meta name="twitter:creator" content="@skybridge" />
-<meta name="twitter:title" content="Psychological Assessments for Students, Parents & Professionals | Mind Rewire">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mindrewire" />
+<meta name="twitter:creator" content="@mindrewire" />
+<meta name="twitter:title" content="Psychological Assessments in Pune | EQ, Aptitude & Behavioural Testing — Mind Rewire">
 <meta name="twitter:description"
-    content="Get clarity through aptitude tests, EQ mapping, interest profiling, focus tracking, and behavioral analysis—delivered with expert interpretation. For schools, individuals, and organizations. Online & offline formats available.">
-<meta name="twitter:image" content="{{ url('favicon.png') }}">
+    content="Psychological assessments in Pune: aptitude, EQ mapping and behavioural testing with expert interpretation for schools and individuals.">
+<meta name="twitter:image" content="{{ url('assets/images/common-images/assessments-og.png') }}">
 
-<meta property="og:url" content="{{ url('/') }}" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Psychological Assessments for Students, Parents & Professionals | Mind Rewire" />
+<meta property="og:url" content="{{ url()->current() }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Psychological Assessments in Pune | EQ, Aptitude & Behavioural Testing — Mind Rewire" />
 <meta property="og:description"
-    content="Get clarity through aptitude tests, EQ mapping, interest profiling, focus tracking, and behavioral analysis—delivered with expert interpretation. For schools, individuals, and organizations. Online & offline formats available." />
+    content="Psychological assessments in Pune: aptitude, EQ mapping and behavioural testing with expert interpretation for schools and individuals." />
 @stop
 
 @section('css')

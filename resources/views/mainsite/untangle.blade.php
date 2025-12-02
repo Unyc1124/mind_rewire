@@ -12,25 +12,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>UNTANGLE – Emotional Wellness Card Decks by Mind Rewire</title>
+<title>UNTANGLE — Emotional Wellness Card Decks | Mind Rewire (Pune)</title>
 <meta name="description"
-    content="UNTANGLE is an interactive emotional wellness experience using themed card decks for fear, trauma, stress, and persona. A powerful self-discovery tool for individuals, groups, therapists, and teams.">
+    content="UNTANGLE card decks are a guided emotional wellness tool by Mind Rewire (Pune). Use themed prompts for trauma, stress, fear and personal growth — suitable for individuals, therapists and groups.">
 <meta name="keywords"
-    content="emotional wellness game, therapy card deck, trauma healing tool, stress reflection cards, persona exploration game, CBT-based prompts, emotional intelligence tool, therapy group card game, Mind Rewire UNTANGLE">
+    content="UNTANGLE card deck, emotional wellness cards Pune, therapy card decks, trauma reflection cards, stress management tools">
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@skybridge" />
-<meta name="twitter:creator" content="@skybridge" />
-<meta name="twitter:title" content="UNTANGLE – Emotional Wellness Card Decks by Mind Rewire">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mindrewire" />
+<meta name="twitter:creator" content="@mindrewire" />
+<meta name="twitter:title" content="UNTANGLE — Emotional Wellness Card Decks | Mind Rewire (Pune)">
 <meta name="twitter:description"
-    content="UNTANGLE is an interactive emotional wellness experience using themed card decks for fear, trauma, stress, and persona. A powerful self-discovery tool for individuals, groups, therapists, and teams.">
-<meta name="twitter:image" content="{{ url('favicon.png') }}">
+    content="UNTANGLE card decks are a guided emotional wellness tool by Mind Rewire (Pune). Use themed prompts for trauma, stress, fear and personal growth.">
+<meta name="twitter:image" content="{{ url('assets/images/common-images/untangle-og.png') }}">
 
-<meta property="og:url" content="{{ url('/') }}" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="UNTANGLE – Emotional Wellness Card Decks by Mind Rewire" />
+<meta property="og:url" content="{{ url()->current() }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="UNTANGLE — Emotional Wellness Card Decks | Mind Rewire (Pune)" />
 <meta property="og:description"
-    content="UNTANGLE is an interactive emotional wellness experience using themed card decks for fear, trauma, stress, and persona. A powerful self-discovery tool for individuals, groups, therapists, and teams." />
+    content="UNTANGLE card decks are a guided emotional wellness tool by Mind Rewire (Pune). Use themed prompts for trauma, stress, fear and personal growth." />
 @stop
 
 @section('css')

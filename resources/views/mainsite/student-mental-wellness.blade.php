@@ -12,25 +12,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>Student Mental Wellness | Play Therapy, Teen Coaching & EQ Support</title>
+<title>Student Mental Wellness in Pune | Child & Teen Counselling — Mind Rewire</title>
 <meta name="description"
-    content="Empathetic therapy and coaching for children and teens facing anxiety, attention issues, exam stress, and emotional dysregulation. Includes parent-child alignment and custom EQ coaching. Trusted by parents, schools, and students.">
+    content="Child and teen counselling in Pune: play therapy, teen coaching, exam stress support and parent-child alignment. Delivered by psychologists with 15+ years clinical experience supporting students and schools.">
 <meta name="keywords"
-    content="student counselling India, teen anxiety therapy, EQ coaching for teens, play therapy children, child psychologist online, exam stress counselling, parent-child therapy India, emotional support for students, student focus coaching">
+    content="child counselling Pune, teen counselling Pune, play therapy Pune, student mental health Pune, exam stress counselling Pune, school counselling Pune">
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@skybridge" />
-<meta name="twitter:creator" content="@skybridge" />
-<meta name="twitter:title" content="Student Mental Wellness | Play Therapy, Teen Coaching & EQ Support">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mindrewire" />
+<meta name="twitter:creator" content="@mindrewire" />
+<meta name="twitter:title" content="Student Mental Wellness in Pune | Child & Teen Counselling — Mind Rewire">
 <meta name="twitter:description"
-    content="Empathetic therapy and coaching for children and teens facing anxiety, attention issues, exam stress, and emotional dysregulation. Includes parent-child alignment and custom EQ coaching. Trusted by parents, schools, and students.">
-<meta name="twitter:image" content="{{ url('favicon.png') }}">
+    content="Child and teen counselling in Pune: play therapy, teen coaching and exam stress support from psychologists with 15+ years experience.">
+<meta name="twitter:image" content="{{ url('assets/images/common-images/student-og.png') }}">
 
-<meta property="og:url" content="{{ url('/') }}" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Student Mental Wellness | Play Therapy, Teen Coaching & EQ Support" />
+<meta property="og:url" content="{{ url()->current() }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Student Mental Wellness in Pune | Child & Teen Counselling — Mind Rewire" />
 <meta property="og:description"
-    content="Empathetic therapy and coaching for children and teens facing anxiety, attention issues, exam stress, and emotional dysregulation. Includes parent-child alignment and custom EQ coaching. Trusted by parents, schools, and students." />
+    content="Child and teen counselling in Pune: play therapy, teen coaching and exam stress support from psychologists with 15+ years experience." />
 @stop
 
 @section('css')
@@ -94,7 +94,7 @@
                 </div>
             </div>
             <div class="imgbox" data-aos="fade-up" data-aos-duration="1500">
-                <img src="{{ url('assets/images/student-wellness/img_top_banner.png')}}" alt="image" />
+                <img src="{{ url('assets/images/student-wellness/img_top_banner.png')}}" alt="Student mental wellness — counselling and play therapy in Pune" />
             </div>
         </div>
     </div>
@@ -446,7 +446,7 @@
                     </p>
                 </div>
                 <div class="imgbox" data-aos="fade-up" data-aos-duration="1500">
-                    <img src="{{ url('assets/images/student-wellness/img_girl.png')}}" alt="image" />
+                        <img src="{{ url('assets/images/student-wellness/img_girl.png')}}" alt="Child counselling at Mind Rewire, Pune" />
                 </div>
             </div>
         </div>

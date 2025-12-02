@@ -178,7 +178,7 @@
                     </div>
                     <div class="managed_by">
                         <p>
-                            ✨ Built by <a href="https://www.linkedin.com/in/anand-singh-286a0a50/">Anand</a> with ❤️
+                            ✨ Built by <a href="https://www.linkedin.com/in/anand-singh-286a0a50/" target="_blank" rel="noopener noreferrer">Anand</a> with ❤️
                         </p>
                     </div>
                 </div>

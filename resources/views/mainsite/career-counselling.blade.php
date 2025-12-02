@@ -12,25 +12,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>Career Counselling with Psychometric & AI Insights – Mind Rewire</title>
+<title>Career Counselling in Pune | Psychometric & AI Insights — Mind Rewire</title>
 <meta name="description"
-	content="Personalized career counselling using psychometric assessments, AI-matched career paths, and a 4-stage decision clarity model. Designed for students, parents, professionals, and career switchers. Take your first step with Mind Rewire.">
+	content="Career counselling in Pune with psychometric assessments, AI-matched insights and a 4-stage clarity model. For students, professionals and career-switchers — delivered by psychologists with 15+ years experience.">
 <meta name="keywords"
-	content="career counselling India, psychometric career tests, career guidance for students, RIASEC profiling, career roadmap AI, aptitude test counseling, career switch support, student career planning, emotional career guidance">
+	content="career counselling Pune, psychometric test Pune, career guidance Pune, career counselling for students Pune, RIASEC Pune">
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@skybridge" />
-<meta name="twitter:creator" content="@skybridge" />
-<meta name="twitter:title" content="Career Counselling with Psychometric & AI Insights – Mind Rewire">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mindrewire" />
+<meta name="twitter:creator" content="@mindrewire" />
+<meta name="twitter:title" content="Career Counselling in Pune | Psychometric & AI Insights — Mind Rewire">
 <meta name="twitter:description"
-	content="Personalized career counselling using psychometric assessments, AI-matched career paths, and a 4-stage decision clarity model. Designed for students, parents, professionals, and career switchers. Take your first step with Mind Rewire.">
-<meta name="twitter:image" content="{{ url('favicon.png') }}">
+	content="Career counselling in Pune with psychometric assessments, AI-matched insights and a 4-stage clarity model. For students and professionals with 15+ years clinical oversight.">
+<meta name="twitter:image" content="{{ url('assets/images/common-images/career-og.png') }}">
 
-<meta property="og:url" content="{{ url('/') }}" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Career Counselling with Psychometric & AI Insights – Mind Rewire" />
+<meta property="og:url" content="{{ url()->Current() }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Career Counselling in Pune | Psychometric & AI Insights — Mind Rewire" />
 <meta property="og:description"
-	content="Personalized career counselling using psychometric assessments, AI-matched career paths, and a 4-stage decision clarity model. Designed for students, parents, professionals, and career switchers. Take your first step with Mind Rewire." />
+	content="Career counselling in Pune with psychometric assessments, AI-matched insights and a 4-stage clarity model. For students and professionals with 15+ years clinical oversight." />
 @stop
 
 @section('css')

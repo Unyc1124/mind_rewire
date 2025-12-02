@@ -12,25 +12,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>Trauma Rewiring Therapy | EMDR, Somatic & Vagus Nerve Healing</title>
+<title>Trauma Rewiring Therapy in Pune | EMDR, Somatic & Vagus Nerve Regulation</title>
 <meta name="description"
-    content="Mind Rewire offers specialized trauma recovery using EMDR-informed methods, somatic tools, and vagus nerve regulation techniques. Reclaim safety, reconnect with your body, and rewire emotional patterns that hold you back.">
+    content="Trauma rewiring and recovery in Pune: EMDR-informed therapy, somatic tools and vagal regulation to support PTSD, complex trauma and stress responses. Delivered by experienced psychologists with 15+ years clinical practice.">
 <meta name="keywords"
-    content="trauma therapy India, EMDR therapist online, vagus nerve therapy, somatic trauma healing, PTSD counselling, trauma rewiring, trauma-informed therapy, body-based therapy India, emotional trauma recovery, nervous system reset">
+    content="trauma therapy Pune, EMDR Pune, somatic trauma therapy Pune, vagus nerve regulation Pune, PTSD counselling Pune">
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@skybridge" />
-<meta name="twitter:creator" content="@skybridge" />
-<meta name="twitter:title" content="Trauma Rewiring Therapy | EMDR, Somatic & Vagus Nerve Healing">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mindrewire" />
+<meta name="twitter:creator" content="@mindrewire" />
+<meta name="twitter:title" content="Trauma Rewiring Therapy in Pune | EMDR, Somatic & Vagus Nerve Regulation">
 <meta name="twitter:description"
-    content="Mind Rewire offers specialized trauma recovery using EMDR-informed methods, somatic tools, and vagus nerve regulation techniques. Reclaim safety, reconnect with your body, and rewire emotional patterns that hold you back.">
-<meta name="twitter:image" content="{{ url('favicon.png') }}">
+    content="Trauma rewiring therapy in Pune using EMDR, somatic methods and vagal regulation — delivered by psychologists with 15+ years experience.">
+<meta name="twitter:image" content="{{ url('assets/images/common-images/trauma-og.png') }}">
 
-<meta property="og:url" content="{{ url('/') }}" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Trauma Rewiring Therapy | EMDR, Somatic & Vagus Nerve Healing" />
+<meta property="og:url" content="{{ url()->current() }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Trauma Rewiring Therapy in Pune | EMDR, Somatic & Vagus Nerve Regulation" />
 <meta property="og:description"
-    content="Mind Rewire offers specialized trauma recovery using EMDR-informed methods, somatic tools, and vagus nerve regulation techniques. Reclaim safety, reconnect with your body, and rewire emotional patterns that hold you back." />
+    content="Trauma rewiring therapy in Pune using EMDR, somatic methods and vagal regulation — delivered by psychologists with 15+ years experience." />
 @stop
 
 @section('css')

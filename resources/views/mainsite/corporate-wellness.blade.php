@@ -12,25 +12,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>Corporate Mental Wellness Programs for Teams & HR | Mind Rewire</title>
+<title>Corporate Mental Wellness Programs | Mind Rewire — Psychologist in Pune</title>
 <meta name="description"
-    content="Mind Rewire offers trauma-informed leadership coaching, employee therapy, burnout recovery, and EQ training. Designed to improve retention, performance, and emotional culture in high-pressure workplaces.">
+    content="Corporate mental wellness programs in Pune and online: employee counselling, burnout recovery, leadership coaching and EQ training. Delivered by psychologists with 15+ years clinical experience to improve retention, performance and workplace wellbeing.">
 <meta name="keywords"
-    content="corporate wellness India, workplace mental health, employee therapy sessions, burnout recovery for teams, HR mental health strategy, emotional intelligence coaching, team EQ training, HR wellness consulting, trauma-informed leadership">
+    content="corporate wellness Pune, workplace mental health Pune, employee counselling Pune, burnout recovery Pune, leadership coaching Pune, EQ training Pune, corporate mental wellness India">
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@skybridge" />
-<meta name="twitter:creator" content="@skybridge" />
-<meta name="twitter:title" content="Corporate Mental Wellness Programs for Teams & HR | Mind Rewire">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mindrewire" />
+<meta name="twitter:creator" content="@mindrewire" />
+<meta name="twitter:title" content="Corporate Mental Wellness Programs | Mind Rewire — Psychologist in Pune">
 <meta name="twitter:description"
-    content="Mind Rewire offers trauma-informed leadership coaching, employee therapy, burnout recovery, and EQ training. Designed to improve retention, performance, and emotional culture in high-pressure workplaces.">
-<meta name="twitter:image" content="{{ url('favicon.png') }}">
+    content="Employee counselling, leadership coaching and burnout recovery programs by Mind Rewire — psychologists in Pune with 15+ years clinical experience.">
+<meta name="twitter:image" content="{{ url('assets/images/common-images/corporate-og.png') }}">
 
-<meta property="og:url" content="{{ url('/') }}" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Corporate Mental Wellness Programs for Teams & HR | Mind Rewire" />
+<meta property="og:url" content="{{ url()->current() }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Corporate Mental Wellness Programs | Mind Rewire — Psychologist in Pune" />
 <meta property="og:description"
-    content="Mind Rewire offers trauma-informed leadership coaching, employee therapy, burnout recovery, and EQ training. Designed to improve retention, performance, and emotional culture in high-pressure workplaces." />
+    content="Employee counselling, leadership coaching and burnout recovery programs by Mind Rewire — psychologists in Pune with 15+ years clinical experience." />
 @stop
 
 @section('css')

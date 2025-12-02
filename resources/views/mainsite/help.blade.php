@@ -12,25 +12,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>Self Help | Mind Rewire Support Hub</title>
+<title>Self Help & Support | Mind Rewire — Psychologists in Pune</title>
 <meta name="description"
-    content="Get instant answers to emotional wellness, therapy options, session prep, and card deck usage. Begin your Mind Rewire journey with clarity and confidence.">
+    content="Self-help guides, FAQs and session prep from Mind Rewire — psychologists in Pune with 15+ years clinical experience. Practical tools for anxiety, stress, trauma recovery and family support.">
 <meta name="keywords"
-    content="therapy self help, emotional wellness FAQs, burnout support, Mind Rewire sessions, UNTANGLE card guide, anxiety coping tools, trauma recovery support, CBT vs. REBT explained, nervous system reset, mental clarity tips, student counselling help, career therapy starter, parenting EQ guidance, corporate mental wellness prep">
+    content="self help mental health Pune, therapy FAQs Pune, anxiety coping tools Pune, session prep mental health, Mind Rewire support, trauma recovery tips, student support Pune">
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@skybridge" />
-<meta name="twitter:creator" content="@skybridge" />
-<meta name="twitter:title" content="Self Help | Mind Rewire Support Hub">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mindrewire" />
+<meta name="twitter:creator" content="@mindrewire" />
+<meta name="twitter:title" content="Self Help & Support | Mind Rewire — Psychologists in Pune">
 <meta name="twitter:description"
-    content="Get instant answers to emotional wellness, therapy options, session prep, and card deck usage. Begin your Mind Rewire journey with clarity and confidence.">
-<meta name="twitter:image" content="{{ url('favicon.png') }}">
+    content="Practical self-help resources and answers from Mind Rewire — psychologists in Pune with 15+ years clinical experience.">
+<meta name="twitter:image" content="{{ url('assets/images/common-images/help-og.png') }}">
 
-<meta property="og:url" content="{{ url('/') }}" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Self Help | Mind Rewire Support Hub" />
+<meta property="og:url" content="{{ url()->current() }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Self Help & Support | Mind Rewire — Psychologists in Pune" />
 <meta property="og:description"
-    content="Get instant answers to emotional wellness, therapy options, session prep, and card deck usage. Begin your Mind Rewire journey with clarity and confidence." />
+    content="Practical self-help resources and answers from Mind Rewire — psychologists in Pune with 15+ years clinical experience." />
 @stop
 
 @section('css')

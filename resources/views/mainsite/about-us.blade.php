@@ -325,7 +325,7 @@
                                 Certified in CBT, REBT, ABA, NLP
                             </li>
                             <li>
-                                11+ Years Of Clinical + Corporate Mental Health
+                                15+ Years Of Clinical & Corporate Mental Health Experience
                             </li>
                             <li>
                                 Works With Children, Teens, Adults, Women, And Professionals

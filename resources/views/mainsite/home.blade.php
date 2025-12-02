@@ -12,26 +12,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>Mind Rewire – Trauma-Informed Therapy, Teen Counselling & Mental Wellness Coaching</title>
+<title>Mind Rewire – Psychologist in Pune | Trauma-Informed Therapy & Counselling</title>
 <meta name="description"
-    content="Mind Rewire offers personalized therapy, trauma recovery, child & teen counselling, and corporate mental wellness programs—designed by psychologists with 11+ years of expertise. Rewire. Redesign. Restore.">
+    content="Mind Rewire is a psychology clinic and online practice in Pune offering trauma-informed therapy, anxiety & depression counselling, child and teen counselling, and corporate mental wellness — led by experienced psychologists with 15+ years of clinical expertise in Pune, India.">
 <meta name="keywords"
-    content="trauma healing therapy India, student mental health counselling, CBT therapy online, REBT certified therapist, career counselling Pune, corporate mental wellness programs, anxiety therapy sessions, psychotherapy India, mind rewiring techniques, child emotional wellness">
+    content="psychologist in Pune, psychologist Pune, therapist Pune, counsellor Pune, anxiety therapy Pune, depression counselling Pune, child counselling Pune, teen counselling Pune, trauma therapy Pune, online psychologist India">
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@skybridge" />
-<meta name="twitter:creator" content="@skybridge" />
-<meta name="twitter:title" content="Mind Rewire – Trauma-Informed Therapy, Teen Counselling & Mental Wellness Coaching">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mindrewire" />
+<meta name="twitter:creator" content="@mindrewire" />
+<meta name="twitter:title" content="Mind Rewire – Psychologist in Pune | Trauma-Informed Therapy & Counselling">
 <meta name="twitter:description"
-    content="Mind Rewire offers personalized therapy, trauma recovery, child & teen counselling, and corporate mental wellness programs—designed by psychologists with 11+ years of expertise. Rewire. Redesign. Restore.">
-<meta name="twitter:image" content="{{ url('favicon.png') }}">
+    content="Compassionate, evidence-based therapy in Pune: anxiety, stress, trauma, child & teen counselling and corporate mental wellness. 15+ years clinical experience.">
+<meta name="twitter:image" content="{{ url('assets/images/common-images/home-og-image.png') }}">
 
 <meta property="og:url" content="{{ url('/') }}" />
-<meta property="og:type" content="article" />
+<meta property="og:type" content="website" />
 <meta property="og:title"
-    content="Mind Rewire – Trauma-Informed Therapy, Teen Counselling & Mental Wellness Coaching" />
+    content="Mind Rewire – Psychologist in Pune | Trauma-Informed Therapy & Counselling" />
 <meta property="og:description"
-    content="Mind Rewire offers personalized therapy, trauma recovery, child & teen counselling, and corporate mental wellness programs—designed by psychologists with 11+ years of expertise. Rewire. Redesign. Restore." />
+    content="Compassionate, evidence-based therapy in Pune: anxiety, stress, trauma, child & teen counselling and corporate mental wellness. 15+ years clinical experience." />
 @stop
 
 
@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="imgbox" data-aos="fade-up" data-aos-duration="1500">
-                <img src="{{ url('assets/images/home/img_top_banner.png') }}" alt="image" />
+                <img src="{{ url('assets/images/home/img_top_banner.png') }}" alt="Mind Rewire — Psychologist in Pune hero image" />
             </div>
         </div>
     </div>
@@ -118,7 +118,7 @@
                 </div>
                 <div class="imgbox" data-aos="fade-up" data-aos-duration="1500">
                     <div class="withpatch">
-                        <img src="{{ url('assets/images/home/img_precision.png') }}" alt="image" />
+                        <img src="{{ url('assets/images/home/img_precision.png') }}" alt="Evidence-based therapy and counselling in Pune" />
                         <div class="common_patch rgtpatch" data-aos="fade-up" data-aos-duration="1500">
                             <img src="{{ url('assets/images/common-images/common_patch.svg') }}" alt="icon">
                         </div>
@@ -270,7 +270,7 @@
                     </div>
                 </a>
                 <a class="commonbox nobg" data-aos="fade-up" data-aos-duration="1500">
-                    <img src="{{ url('assets/images/home/img_man.png') }}" alt="image" />
+                    <img src="{{ url('assets/images/home/img_man.png') }}" alt="Client working with a psychologist at Mind Rewire, Pune" />
                 </a>
             </div>
             <div class="btnrow" data-aos="fade-up" data-aos-duration="1500">
