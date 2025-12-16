@@ -76,7 +76,7 @@
                                 <div class="listtype">
                                     <a>
                                         Mind Rewire, Park Street, Wakad, Pune, Maharashtra, India -
-                                        411057
+                                        411056
                                     </a>
                                 </div>
                             </div>
