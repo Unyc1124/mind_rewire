@@ -320,6 +320,14 @@
                         <li>
                             <a href="{{ url('plans-pricing') }}">Plans & Pricing</a>
                         </li>
+
+                        <li>
+                            <a href="{{ url('products') }}"
+                            class="{{ request()->is('products') ? 'active' : '' }}">
+                                Wellness Products
+                            </a>
+                        </li>
+
                         <li>
                             <a href="{{ url('assessments') }}">Assessments</a>
                         </li>
@@ -360,7 +368,7 @@
                     <span class="two"></span>
                     <span class="three"></span>
                 </div>
-                <a href="tel:+91 77580 23819" class="number">
+                <!-- <a href="tel:+91 77580 23819" class="number">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                         viewBox="0 0 16.049 16.072">
                         <g id="Group_49567" data-name="Group 49567" transform="translate(-0.344 0)">
@@ -378,7 +386,7 @@
                         </g>
                     </svg>
                     +91 77580 23819
-                </a>
+                </a> -->
                 <a href="{{ url('book-session') }}" class="rgtbtn animation_white_line">
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17.498 18">
                         <g id="Group_7" data-name="Group 7" transform="translate(-2.949)">
