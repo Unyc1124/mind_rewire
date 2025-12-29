@@ -13,14 +13,24 @@
     @yield('favicon')
 
     @include('includes.head')
+
     @yield('css')
+
+    <style>
+.mw-page-offset {
+    padding-top: 140px; /* header height */
+}
+</style>
+
 </head>
 
 <body class="@yield('body-class')">
 
     @include('includes.header')
 
-    @yield('content')
+    <div style="padding-top:120px;">
+        @yield('content')
+    </div>
 
     @include('includes.footer')
 
