@@ -146,7 +146,7 @@ Route::get('/booking-success/{id}', function ($id) {
     $booking = \App\Models\Billing::with('bookedTimeSlots','therapyCategory')
         ->findOrFail($id);
 
-    return view('booking-success', compact('booking'));
+    return view('mainsite.booking-success', compact('booking'));
 });
 
 
