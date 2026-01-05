@@ -130,8 +130,14 @@
 
 
 
-                            <button class="mw-wishlist-btn" title="Add to wishlist">♡</button>
-                             
+                            <!-- <button class="mw-wishlist-btn" title="Add to wishlist">♡</button> -->
+                             <!-- <button
+    class="mw-wishlist-btn"
+    data-product-id="{{ $product->id }}"
+    title="Add to wishlist"
+>
+    ♡
+</button> -->
                         </div>
 
                         <!-- TRUST POINTS -->

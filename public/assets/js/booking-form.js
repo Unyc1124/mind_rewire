@@ -92,13 +92,21 @@ $("#proceed_to_pay").on("click", function () {
                                         order_id: response.order_id,
                                         payment_status: "cancelled",
                                     },
-                                    success: function () {
-                                        $("#billing_details_form")[0].reset();
-                                        window.location.reload();
-                                    },
-                                    error: function (xhr, status, error) {
-                                        window.location.reload();
-                                    },
+                                    // success: function () {
+                                    //     $("#billing_details_form")[0].reset();
+                                    //     window.location.reload();
+                                    // },
+                                    // error: function (xhr, status, error) {
+                                    //     window.location.reload();
+                                    // },
+                                    success: function (msg) {
+    showSwalToast("success", "✅ Payment Successful");
+    $("#billing_details_form")[0].reset();
+
+    // ✅ REDIRECT TO SUCCESS PAGE
+    window.location.href = "/booking-success/" + msg.billing_id;
+},
+
                                 });
 
                                 // User closed Razorpay payment popup manually
@@ -131,6 +139,8 @@ $("#proceed_to_pay").on("click", function () {
                             success: function () {
                                 $("#billing_details_form")[0].reset();
                                 window.location.reload();
+                                // window.location.href = "/booking-success/" + response.billing_id;
+
                             },
                             error: function (xhr, status, error) {
                                 window.location.reload();

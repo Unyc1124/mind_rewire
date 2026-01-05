@@ -133,10 +133,21 @@
                                     ₹{{ number_format($product->price, 0) }}
                                 </span>
 
-                                <a href="{{ url('products/' . $product->slug) }}"
+                                <!-- <a href="{{ url('products/' . $product->slug) }}"
                                    class="mw-btn">
                                     View
                                 </a>
+                                <button class="mw-wishlist-btn" title="Add to wishlist">♡</button> -->
+                              
+                                    <div class="mw-actions-wrapper">
+                                        <div class="mw-actions">
+                                            <a href="{{ url('products/' . $product->slug) }}" class="mw-btn">View</a>
+                                            <!-- <button class="mw-wishlist-btn">♡</button> -->
+                                              
+                                        </div>
+                                    </div>
+
+
                             </div>
                         </div>
 

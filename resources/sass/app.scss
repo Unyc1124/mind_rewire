@@ -859,3 +859,43 @@
 .mw-success-btn {
     padding: 12px 32px;
 }
+
+// .mw-actions {
+//     display: inline-flex !important;
+//     align-items: center;
+//     gap: 8px;
+// }
+
+// .mw-actions-wrapper {
+//     display: flex;
+//     justify-content: center;
+// }
+
+// //wishlist badme
+// .mw-wishlist-btn {
+//     background: transparent;
+//     border: none;
+//     font-size: 22px;
+//     cursor: pointer;
+//     color: #1D3D91;
+//     transition: transform 0.0s ease, color 0.0s ease;
+// }
+
+// .mw-wishlist-btn:hover {
+//     transform: scale(1.1);
+// }
+
+// .mw-wishlist-btn.active {
+//     color: #E63946; /* red heart */
+// }
+
+
+.mw-success-card {
+    background: #f9fbff;
+    padding: 24px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: auto;
+}
+
+
