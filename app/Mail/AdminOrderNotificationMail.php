@@ -7,11 +7,11 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class OrderInvoiceMail extends Mailable
+class AdminOrderNotificationMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $order;
+    public Order $order;
 
     public function __construct(Order $order)
     {
@@ -20,7 +20,8 @@ class OrderInvoiceMail extends Mailable
 
     public function build()
     {
-        return $this->subject('Your Mind Rewire Product Invoice')
-                    ->view('emails.order-invoice');
+        return $this
+            ->subject('🛒 New Order Received - ' . $this->order->order_number)
+            ->view('emails.admin-order-notification');
     }
 }

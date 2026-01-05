@@ -913,3 +913,26 @@ svg {
 .colored-toast .swal2-html-container {
     color: white;
 }
+
+//wishlist css
+
+.mw-wishlist-btn {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #1D3D91;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.mw-wishlist-btn:hover {
+    transform: scale(1.1);
+}
+
+.mw-wishlist-btn.active {
+    color: #E63946; /* red heart */
+}
+
+
+
+

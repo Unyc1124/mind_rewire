@@ -145,6 +145,9 @@ use Illuminate\Support\Facades\DB;
 use Razorpay\Api\Api;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\OrderInvoiceMail;
+use App\Mail\AdminOrderNotificationMail;
+
+
 
 
 
@@ -213,8 +216,8 @@ class OrderController extends Controller
             DB::commit();
 
             // return redirect()->route('order.success', $order->id);
-            // return redirect()->route('checkout.payment', $order->id);
-            return view('checkout.payment', compact('order', 'razorpayOrder'));
+            return redirect()->route('checkcleaout.payment', $order->id);
+            // return view('checkout.payment', compact('order', 'razorpayOrder'));
 
 
 
@@ -264,6 +267,10 @@ public function paymentSuccess(Request $request)
     // ✅ SEND INVOICE EMAIL
     Mail::to($order->customer_email)
         ->send(new OrderInvoiceMail($order));
+
+    // Send order alert to admin
+Mail::to(config('mail.admin_email'))
+    ->send(new AdminOrderNotificationMail($order));
 
     return redirect()->route('order.success', $order->id);
 }

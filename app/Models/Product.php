@@ -19,4 +19,13 @@ class Product extends Model
         'image',
         'is_active',
     ];
+
+    /**
+ * Product wishlisted by users
+ */
+public function wishlists()
+{
+    return $this->hasMany(\App\Models\Wishlist::class);
+}
+
 }
