@@ -147,12 +147,12 @@ Mail::to(env('ADMIN_ORDER_EMAIL'))
         return response()->json(['message' => 'Payment Successful']);
     }
 
-        public function bookingSuccessPage(Billing $billing)
-{
-    $billing->load(['bookedTimeSlots', 'therapyCategory']);
+//         public function bookingSuccessPage(Billing $billing)
+// {
+//     $billing->load(['bookedTimeSlots', 'therapyCategory']);
 
-    return view('mainsite.booking-success', compact('billing'));
-}
+//     return view('mainsite.booking-success', compact('billing'));
+// }
 
     public function paymentFailed(Request $request)
     {
