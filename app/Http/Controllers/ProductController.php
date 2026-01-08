@@ -9,6 +9,11 @@ class ProductController extends Controller
 {
     public function index()
 {
+
+    session()->forget('selected_products');
+
+    $products = Product::all();
+
     // Featured product (1 product only)
     $featuredProduct = Product::where('is_active', true)
                               ->where('is_featured', true)
@@ -34,5 +39,15 @@ public function show($slug)
     return view('products.show', compact('product'));
 }
 
+
+// public function index()
+// {
+//     // 🔥 RESET PRODUCT SELECTION ON PAGE LOAD
+//     session()->forget('selected_products');
+
+//     $products = Product::all();
+
+//     return view('products.index', compact('products'));
+// }
 
 }
