@@ -10,6 +10,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\WishlistController;
+use App\Http\Controllers\CheckoutController;
 
 
 // test-mail
@@ -84,8 +85,8 @@ Route::group(['middleware' => ['variable_replace']], function () {
     Route::post('place-order', [OrderController::class, 'placeOrder'])->name('place.order');
 
     /* ---------------- PAYMENT (CART + BUY NOW) ---------------- */
-    Route::get('checkout/payment/{order}', [OrderController::class, 'payment'])
-        ->name('checkout.payment');
+    // Route::get('checkout/payment/{order}', [OrderController::class, 'payment'])
+    //     ->name('checkout.payment');
 
     Route::post('checkout/payment-success', [OrderController::class, 'paymentSuccess'])
         ->name('checkout.payment.success');
@@ -140,6 +141,23 @@ Route::get('/test-mail', function () {
     return 'Mail sent';
 });
 
+
+Route::prefix('checkout')->group(function () {
+
+    Route::get('/details', [CheckoutController::class, 'details'])
+        ->name('checkout.details');
+
+    Route::post('/create-order', [CheckoutController::class, 'createOrder'])
+        ->name('checkout.create');
+
+    Route::post('/payment-success', [CheckoutController::class, 'paymentSuccess'])
+        ->name('checkout.payment.success');
+
+    Route::get('/success/{order}', [CheckoutController::class, 'success'])
+        ->name('checkout.success');
+});
+
+
 // Route::get('/booking-success/{billing}', [PaymentController::class, 'bookingSuccessPage'])
 //     ->name('booking.success');
 Route::get('/booking-success/{id}', function ($id) {
@@ -148,6 +166,52 @@ Route::get('/booking-success/{id}', function ($id) {
 
     return view('mainsite.booking-success', compact('booking'));
 });
+
+Route::post('/select-product', [OrderController::class, 'selectProduct'])
+    ->name('select.product');
+
+Route::post('/remove-product', [OrderController::class, 'removeProduct'])
+    ->name('remove.product');
+
+Route::get('/checkout-selected', [OrderController::class, 'checkoutSelected'])
+    ->name('checkout.selected');
+
+    //multiple products session-based 
+Route::post('/select-product', [App\Http\Controllers\ProductSelectionController::class, 'update'])
+    ->name('product.select');
+
+Route::get('/checkout-selected', [App\Http\Controllers\ProductSelectionController::class, 'checkout'])
+    ->name('checkout.selected');
+
+Route::get('/checkout/payment', [CheckoutController::class, 'payment'])
+    ->name('checkout.payment');
+
+
+//cart session based routes
+Route::post('/checkout/place-order', [CheckoutController::class, 'placeOrder'])
+    ->name('checkout.placeOrder');
+
+    Route::get('/checkout/details', [CheckoutController::class, 'details'])
+    ->name('checkout.details');
+
+Route::get('/checkout-selected', [CheckoutController::class, 'selected'])
+    ->name('checkout.selected');
+
+Route::get('/checkout/payment/{order}', [CheckoutController::class, 'payment'])
+    ->name('checkout.payment');
+
+Route::get('/order-success/{order}', [CheckoutController::class, 'success'])
+    ->name('order.success');
+
+Route::post('/checkout/create', [CheckoutController::class, 'createRazorpayOrder'])
+    ->name('checkout.create');
+
+
+Route::post('/checkout/payment/success', [CheckoutController::class, 'paymentSuccess'])
+    ->name('checkout.payment.success');
+
+Route::get('/checkout/success/{order}', [CheckoutController::class, 'success'])
+    ->name('checkout.success');
 
 
 

@@ -97,12 +97,29 @@
     <div class="content_area">
         <div class="custom_container">
 
-            <h3 class="mw-section-title text-center">
+            <!-- <h3 class="mw-section-title text-center">
                 Explore Our Collection
             </h3>
             <p class="mw-section-subtitle text-center">
                 Wellness products designed to support your daily mental health rituals
-            </p>
+            </p> -->
+            <div class="mw-collection-header">
+    <div>
+        <h3 class="mw-section-title">Explore Our Collection</h3>
+        <p class="mw-section-subtitle">
+            Wellness products designed to support your daily mental health rituals
+        </p>
+    </div>
+
+    <button
+        id="placeOrderBtn"
+        class="mw-primary-btn"
+        disabled
+        onclick="window.location.href='{{ route('checkout.details') }}'">
+        Place Order (0)
+    </button>
+</div>
+
 
             <div class="row mt-5">
 
@@ -143,6 +160,16 @@
                                         <div class="mw-actions">
                                             <a href="{{ url('products/' . $product->slug) }}" class="mw-btn">View</a>
                                             <!-- <button class="mw-wishlist-btn">♡</button> -->
+                                             <div class="mw-qty-selector"
+     data-product-id="{{ $product->id }}"
+     data-price="{{ $product->price }}">
+
+    <button class="qty-btn minus">−</button>
+    <span class="qty-count">0</span>
+    <button class="qty-btn plus">+</button>
+
+</div>
+
                                               
                                         </div>
                                     </div>
@@ -164,6 +191,45 @@
     </div>
 
 </div>
+
+<script>
+let totalSelected = 0;
+
+document.querySelectorAll('.mw-qty-selector').forEach(selector => {
+    const minus = selector.querySelector('.minus');
+    const plus = selector.querySelector('.plus');
+    const countEl = selector.querySelector('.qty-count');
+
+    let count = 0;
+    const productId = selector.dataset.productId;
+
+    function updateUI(newCount) {
+        count = Math.max(0, newCount);
+        countEl.innerText = count;
+
+        fetch("{{ route('product.select') }}", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "X-CSRF-TOKEN": "{{ csrf_token() }}"
+            },
+            body: JSON.stringify({
+                product_id: productId,
+                quantity: count
+            })
+        })
+        .then(res => res.json())
+        .then(data => {
+            const btn = document.getElementById('placeOrderBtn');
+            btn.innerText = `Place Order (${data.count})`;
+            btn.disabled = data.count === 0;
+        });
+    }
+
+    plus.addEventListener('click', () => updateUI(count + 1));
+    minus.addEventListener('click', () => updateUI(count - 1));
+});
+</script>
 
 @endsection
 
