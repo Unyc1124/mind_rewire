@@ -11,6 +11,7 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\NavigatorController;
 
 
 // test-mail
@@ -30,7 +31,7 @@ Route::group(['middleware' => ['variable_replace']], function () {
     Route::get('/', [MainSiteController::class, 'index']);
     Route::get('about-us', [MainSiteController::class, 'aboutUs']);
     Route::get('founders', [MainSiteController::class, 'founders']);
-    Route::get('assessments', [MainSiteController::class, 'assessments']);
+    // Route::get('assessments', [MainSiteController::class, 'assessments']);
     Route::get('success-stories', [MainSiteController::class, 'successStories']);
     Route::get('careers', [MainSiteController::class, 'careers']);
     Route::get('solutions', [MainSiteController::class, 'solutions']);
@@ -212,6 +213,26 @@ Route::post('/checkout/payment/success', [CheckoutController::class, 'paymentSuc
 
 Route::get('/checkout/success/{order}', [CheckoutController::class, 'success'])
     ->name('checkout.success');
+
+//naviagtor routing
+
+Route::get('/navigator/stories', function () {
+    return view('navigator.stories');
+});
+
+Route::prefix('navigator')->group(function () {
+    Route::get('/start', [NavigatorController::class, 'start']);
+    Route::post('/analyze', [NavigatorController::class, 'analyze']);
+
+    Route::get('/results', [NavigatorController::class, 'results']);
+    Route::get('/plan', [NavigatorController::class, 'plan']);
+
+    Route::view('/safety', 'navigator.safety');
+});
+
+
+
+
 
 
 

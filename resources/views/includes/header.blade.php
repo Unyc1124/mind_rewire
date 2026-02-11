@@ -2,9 +2,16 @@
     <div class="header_bottom">
         <div class="custom_container">
             <div class="l_logo">
-                <a href="{{ url('/') }}" class="white_logo">
+                <!-- <a href="{{ url('/') }}" class="white_logo">
                     <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" alt="logo image" />
-                </a>
+                </a> -->
+                <a href="{{ url('/') }}" class="white_logo">
+    <span class="logo-wrap">
+        <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" alt="Mind Rewire Logo" />
+        <span class="trademark">®</span>
+    </span>
+</a>
+
                 <a href="{{ url('/') }}" class="gray_logo">
                     <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" alt="logo image" />
                 </a>
@@ -328,9 +335,61 @@
                             </a>
                         </li>
 
-                        <li>
-                            <a href="{{ url('assessments') }}">Assessments</a>
-                        </li>
+                        <!-- <li>
+                            <a href="{{ url('assessments') }}">Navigator</a>
+                        </li> -->
+<li class="nav-navigator">
+    <a>Navigator</a>
+
+    <div class="custom_dropdown customscroll navigator_dd">
+        <div class="custom_container full">
+            
+
+            <div class="whitebox navigator_box">
+                <ul>
+                    <li>
+                        <a href="{{ url('navigator/start') }}">
+                            
+                            Start Assessment
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url('navigator/results') }}">
+                            
+                            Your Results
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url('navigator/plan') }}">
+                            
+                            Your Plan
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url('navigator/stories') }}">
+                            
+                            Stories
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url('contact-us') }}">
+                            
+                            Safety Support
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</li>
+
+
+
                         <li>
                             <a href="{{ url('success-stories') }}">Success Stories</a>
                         </li>

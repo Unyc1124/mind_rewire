@@ -192,3 +192,70 @@
     text-align: center;
 }
 
+
+/* ===== Navigator Dropdown Final Fix ===== */
+
+.nav-navigator .navigator_dd {
+    position: absolute !important;
+    left: auto !important;
+    right: auto !important;
+    width: auto !important;
+    min-width: 240px;
+    max-width: 280px;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    margin-top: 10px;
+    z-index: 9999;
+}
+
+/* kill mega menu container stretching */
+.nav-navigator .custom_container {
+    all: unset !important;
+}
+
+/* actual dropdown box */
+.nav-navigator .navigator_box {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 8px 0;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+}
+
+/* spacing between links */
+.nav-navigator .navigator_box ul {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-navigator .navigator_box li {
+    list-style: none;
+}
+
+.nav-navigator .navigator_box a {
+    display: block;
+    padding: 12px 20px;   /* 👈 spacing fixed */
+    font-size: 15px;
+    color: #1E3A8A;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s ease;
+}
+
+.nav-navigator .navigator_box a:hover {
+    background: #F3F6FF;
+}
+
+/* smooth appear */
+.nav-navigator .navigator_dd {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(6px);
+    transition: all 0.18s ease;
+}
+
+.nav-navigator:hover .navigator_dd {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
