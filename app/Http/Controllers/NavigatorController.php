@@ -16,7 +16,7 @@ class NavigatorController extends Controller
 
     public function analyze(Request $request)
     {
-        $response = Http::timeout(60)->post('http://127.0.0.1:8000/navigator', [
+        $response = Http::timeout(60)->post('https://mind-rewire-rag.onrender.com/navigator', [
             'text' => $request->text,
             'age_group' => $request->age_group
         ]);
