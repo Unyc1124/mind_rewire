@@ -20,7 +20,7 @@
 
     <div class="stories-header">
         <div>
-            <h2>Latest Stories</h2>
+            <h2>Stories</h2>
             <p>Stories are for hope, not comparison.</p>
         </div>
 
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
                            target="_blank"
                            rel="noopener noreferrer"
                            class="story-btn">
-                           Read Story →
+                           Watch     ▶
                         </a>
                     </div>
 

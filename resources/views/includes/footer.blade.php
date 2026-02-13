@@ -20,6 +20,7 @@
                 <div class="f_logo">
     <a href="{{ url('/') }}">
         <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" alt="logo">
+        <span class="trademark">®</span>
     </a>
 </div>
 

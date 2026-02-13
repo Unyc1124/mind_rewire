@@ -3,7 +3,7 @@
     "name": "Deepika Padukone",
     "condition_tag": "mood",
     "summary": "Deepika has publicly shared her experience of feeling emotionally overwhelmed and seeking professional support, helping normalize conversations around emotional wellbeing.",
-    "source_url": "https://www.livelovelaughfoundation.org/",
+    "source_url": "https://www.youtube.com/shorts/vu74uSH_jmg",
     "image_url": "public/stories/dp.png",
     "disclaimer": "Stories are for hope, not comparison.",
     "is_active": true
@@ -12,7 +12,7 @@
     "name": "Emma Stone",
     "condition_tag": "anxiety",
     "summary": "Emma has spoken openly in interviews about experiencing intense worry and panic moments, helping normalize discussions about emotional struggles.",
-    "source_url": "https://www.vogue.com/article/emma-stone-anxiety-interview",
+    "source_url": "https://www.youtube.com/shorts/7lqzxzxaQ8s",
     "image_url": "public/stories/emma_stone.webp",
     "disclaimer": "Stories are for hope, not comparison.",
     "is_active": true
@@ -21,7 +21,7 @@
     "name": "Virat Kohli",
     "condition_tag": "stress",
     "summary": "Virat has publicly discussed handling performance pressure and emotional exhaustion, encouraging open dialogue about wellbeing in sports.",
-    "source_url": "https://www.bbc.com/sport/cricket/virat-kohli-mental-health",
+    "source_url": "https://www.youtube.com/shorts/Cz6d-_PhEg0",
     "image_url": "public/stories/virat_kohli.png",
     "disclaimer": "Stories are for hope, not comparison.",
     "is_active": true
@@ -30,7 +30,7 @@
     "name": "Selena Gomez",
     "condition_tag": "mood",
     "summary": "Selena has shared her journey of understanding emotional health and prioritizing self-care, inspiring open conversations about wellbeing.",
-    "source_url": "https://www.apple.com/tv-pr/news/2022/03/selena-gomez-documentary/",
+    "source_url": "https://www.youtube.com/shorts/AXbxAuMyqAE",
     "image_url": "public/stories/selena_gomez.png",
     "disclaimer": "Stories are for hope, not comparison.",
     "is_active": true
@@ -39,8 +39,8 @@
     "name": "Prince Harry",
     "condition_tag": "intrusive",
     "summary": "Prince Harry has openly discussed coping with grief and recurring difficult thoughts, helping reduce stigma around seeking support.",
-    "source_url": "https://www.apple.com/tv-pr/news/2021/05/the-me-you-cant-see/",
-    "image_url": "stories/harry.jpg",
+    "source_url": "https://www.youtube.com/shorts/BD0L12UM0nU",
+    "image_url": "stories/harry.png",
     "disclaimer": "Stories are for hope, not comparison.",
     "is_active": true
   },
@@ -48,7 +48,7 @@
     "name": "Alia Bhatt",
     "condition_tag": "anxiety",
     "summary": "Alia has publicly spoken about managing overwhelming thoughts and prioritizing emotional balance in daily life.",
-    "source_url": "https://www.youtube.com/watch?v=alia-mental-health-interview",
+    "source_url": "https://www.youtube.com/watch?v=SfSr5WC4bk4",
     "image_url": "public/stories/alia_bhat.png",
     "disclaimer": "Stories are for hope, not comparison.",
     "is_active": true
@@ -57,7 +57,7 @@
     "name": "Kendall Jenner",
     "condition_tag": "anxiety",
     "summary": "Kendall has shared her experiences with intense worry and sleep disruptions, helping normalize conversations about emotional wellbeing.",
-    "source_url": "https://www.vogue.com/article/kendall-jenner-anxiety-interview",
+    "source_url": "https://www.youtube.com/shorts/haYwZIyJjJk",
     "image_url": "public/stories/kendall_jenner.png",
     "disclaimer": "Stories are for hope, not comparison.",
     "is_active": true
@@ -66,7 +66,7 @@
     "name": "Lady Gaga",
     "condition_tag": "stress",
     "summary": "Lady Gaga has openly discussed navigating emotional stress and building self-care routines, inspiring many to seek support.",
-    "source_url": "https://bornthisway.foundation/",
+    "source_url": "https://www.youtube.com/shorts/DFIIdlqPkBA",
     "image_url": "public/stories/lady_gaga.png",
     "disclaimer": "Stories are for hope, not comparison.",
     "is_active": true
@@ -75,7 +75,7 @@
     "name": "Dwayne Johnson",
     "condition_tag": "mood",
     "summary": "Dwayne has shared personal experiences of low emotional periods and learning to ask for help.",
-    "source_url": "https://www.cnbc.com/2018/09/13/dwayne-the-rock-johnson-opens-up-about-depression.html",
+    "source_url": "https://www.youtube.com/shorts/740Dmbk8A1k",
     "image_url": "public/stories/dwayne_johnson.png",
     "disclaimer": "Stories are for hope, not comparison.",
     "is_active": true
@@ -84,7 +84,7 @@
     "name": "Adele",
     "condition_tag": "sleep",
     "summary": "Adele has publicly spoken about emotional overwhelm and sleep disruption after major life changes.",
-    "source_url": "https://www.rollingstone.com/music/music-news/adele-mental-health-interview/",
+    "source_url": "https://www.youtube.com/watch?v=yasgikdvPZs",
     "image_url": "public/stories/adele.png",
     "disclaimer": "Stories are for hope, not comparison.",
     "is_active": true
@@ -93,7 +93,7 @@
     "name": "Shah Rukh Khan",
     "condition_tag": "stress",
     "summary": "Shah Rukh Khan has shared reflections on handling intense public pressure and staying emotionally grounded.",
-    "source_url": "https://www.hindustantimes.com/entertainment/srk-interview-wellbeing",
+    "source_url": "https://www.youtube.com/watch?v=E5DnubPPuvY",
     "image_url": "public/stories/srk.png",
     "disclaimer": "Stories are for hope, not comparison.",
     "is_active": true
@@ -102,7 +102,7 @@
     "name": "Billie Eilish",
     "condition_tag": "mood",
     "summary": "Billie has shared her experiences of feeling overwhelmed early in her career and learning emotional self-care.",
-    "source_url": "https://www.rollingstone.com/music/music-news/billie-eilish-interview-mental-health/",
+    "source_url": "https://www.youtube.com/watch?v=_XFd0RLKQWA",
     "image_url": "public/stories/billie_eillish.png",
     "disclaimer": "Stories are for hope, not comparison.",
     "is_active": true
@@ -111,7 +111,7 @@
     "name": "Michael Phelps",
     "condition_tag": "intrusive",
     "summary": "Michael Phelps has openly shared dealing with recurring difficult thoughts and high performance pressure.",
-    "source_url": "https://www.today.com/health/michael-phelps-mental-health-interview",
+    "source_url": "https://www.youtube.com/watch?v=EHsueNpdq_Q",
     "image_url": "public/stories/micheal_phelps.png",
     "disclaimer": "Stories are for hope, not comparison.",
     "is_active": true
@@ -120,7 +120,7 @@
     "name": "Priyanka Chopra",
     "condition_tag": "anxiety",
     "summary": "Priyanka has spoken publicly about managing intense work pressure and maintaining emotional balance.",
-    "source_url": "https://www.forbes.com/sites/priyanka-chopra-mental-health/",
+    "source_url": "https://www.youtube.com/watch?v=RxZdUlvCM2c",
     "image_url": "public/stories/pc.png",
     "disclaimer": "Stories are for hope, not comparison.",
     "is_active": true
@@ -129,7 +129,7 @@
     "name": "Zayn Malik",
     "condition_tag": "sleep",
     "summary": "Zayn has shared his experience of stepping back from overwhelming situations to focus on wellbeing and rest.",
-    "source_url": "https://www.bbc.com/news/entertainment-arts-zayn-mental-health",
+    "source_url": "https://www.youtube.com/watch?v=HhS-JQYD_yI",
     "image_url": "public/stories/zayn_malik.png",
     "disclaimer": "Stories are for hope, not comparison.",
     "is_active": true

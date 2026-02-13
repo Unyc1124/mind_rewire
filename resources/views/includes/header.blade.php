@@ -1,7 +1,16 @@
 <div class="header" id="header">
     <div class="header_bottom">
         <div class="custom_container">
-            <div class="l_logo">
+            <!-- <div class="l_logo">
+                <a href="{{ url('/') }}" class="white_logo">
+                    <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" alt="logo image" />
+                </a>
+                <a href="{{ url('/') }}" class="gray_logo">
+                    <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" alt="logo image" />
+                </a>
+            </div> -->
+           
+           <div class="l_logo">
                 <!-- <a href="{{ url('/') }}" class="white_logo">
                     <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" alt="logo image" />
                 </a> -->
@@ -378,12 +387,7 @@
                         </a>
                     </li>
 
-                    <li>
-                        <a href="{{ url('contact-us') }}">
-                            
-                            Safety Support
-                        </a>
-                    </li>
+                    
                 </ul>
             </div>
 
