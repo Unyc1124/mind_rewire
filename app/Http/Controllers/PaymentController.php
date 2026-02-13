@@ -12,13 +12,15 @@ use App\Models\TherapyCategory;
 use PHPMailer\PHPMailer;
 use Illuminate\Support\Facades\Log;
 use Vinkla\Hashids\Facades\Hashids;
+use App\Mail\AdminBookingNotificationMail;
+use Illuminate\Support\Facades\Mail;
 
 class PaymentController extends Controller
 {
 
     public function submitBooking(Request $request)
     {
-
+        \Log::info('submit booking hit');
         $request->validate([
             'selected_date' => 'required',
             'selected_slot' => 'required',
@@ -114,8 +116,13 @@ class PaymentController extends Controller
         return response()->json(['type' => 'success', 'data' => $state_list]);
     }
 
+
+
+
     public function paymentSuccess(Request $request)
     {
+        Log::info('paymentSuccess hit', $request->all());
+
         Log::alert($request);
 
         $billing = Billing::where('razorpay_order_id', $request->razorpay_order_id)->first();
@@ -125,10 +132,27 @@ class PaymentController extends Controller
                 'razorpay_payment_id' => $request->razorpay_payment_id,
                 'payment_status' => 'paid',
             ]);
+
+            // ✅ SEND EMAIL HERE ALSO
+        $this->sendConfirmationEmail($billing);
+           
+        // ✅ Admin notification (Laravel Mail)
+Mail::to(env('ADMIN_ORDER_EMAIL'))
+    ->send(new AdminBookingNotificationMail($billing));
+
+
+        
         }
 
         return response()->json(['message' => 'Payment Successful']);
     }
+
+//         public function bookingSuccessPage(Billing $billing)
+// {
+//     $billing->load(['bookedTimeSlots', 'therapyCategory']);
+
+//     return view('mainsite.booking-success', compact('billing'));
+// }
 
     public function paymentFailed(Request $request)
     {
@@ -242,7 +266,14 @@ class PaymentController extends Controller
 
         $admin_email_body = $this->replaceCommonVariable($billing_details, $therapy_type, $admin_email_body);
 
-        $this->sendEmail('admin@mind-rewire.com', 'Mind Rewire', $admin_subject, $admin_email_body);
+       $this->sendEmail(
+    config('mail.ADMIN_ORDER_EMAIL'),
+    'Mind Rewire',
+    $admin_subject,
+    $admin_email_body
+);
+
+        // $this->sendEmail('admin@mind-rewire.com', 'Mind Rewire', $admin_subject, $admin_email_body);
     }
 
 
@@ -277,29 +308,62 @@ class PaymentController extends Controller
     }
 
 
+    // public function sendEmail($email, $name, $subject, $email_body)
+    // {
+
+    //     $mail = new PHPMailer\PHPMailer(true);
+
+    //     try {
+    //         $mail->isMail(); // Use PHP's mail() instead of SMTP
+
+    //         // Sender & recipient
+    //         $mail->setFrom('Info@mind-rewire.com ', 'Mind Rewire');
+    //         $mail->addAddress($email, $name);
+
+    //         // Content
+    //         $mail->isHTML(true);
+    //         $mail->Subject = $subject;
+    //         $mail->Body    = $email_body;
+    //         // $mail->AltBody = 'This is a test email using GoDaddy shared hosting.';
+
+    //         $mail->send();
+
+    //         echo 'Email sent successfully!';
+    //     } catch (Exception $e) {
+    //         echo "Email could not be sent. PHPMailer Error: {$mail->ErrorInfo}";
+    //     }
+    // }
+
     public function sendEmail($email, $name, $subject, $email_body)
-    {
+{
+    $mail = new \PHPMailer\PHPMailer\PHPMailer(true);
 
-        $mail = new PHPMailer\PHPMailer(true);
+    try {
+        // SMTP CONFIG
+        $mail->isSMTP();
+        $mail->Host       = env('MAIL_HOST');
+        $mail->SMTPAuth   = true;
+        $mail->Username   = env('MAIL_USERNAME');
+        $mail->Password   = env('MAIL_PASSWORD');
+        $mail->SMTPSecure = env('MAIL_ENCRYPTION');
+        $mail->Port       = env('MAIL_PORT');
 
-        try {
-            $mail->isMail(); // Use PHP's mail() instead of SMTP
+        // Sender
+        $mail->setFrom(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'));
+        $mail->addAddress($email, $name);
 
-            // Sender & recipient
-            $mail->setFrom('Info@mind-rewire.com ', 'Mind Rewire');
-            $mail->addAddress($email, $name);
+        // Content
+        $mail->isHTML(true);
+        $mail->Subject = $subject;
+        $mail->Body    = $email_body;
 
-            // Content
-            $mail->isHTML(true);
-            $mail->Subject = $subject;
-            $mail->Body    = $email_body;
-            // $mail->AltBody = 'This is a test email using GoDaddy shared hosting.';
+        $mail->send();
 
-            $mail->send();
+        \Log::info('Email sent successfully to ' . $email);
 
-            echo 'Email sent successfully!';
-        } catch (Exception $e) {
-            echo "Email could not be sent. PHPMailer Error: {$mail->ErrorInfo}";
-        }
+    } catch (\Exception $e) {
+        \Log::error('Email failed: ' . $mail->ErrorInfo);
     }
+}
+
 }

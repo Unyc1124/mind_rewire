@@ -3,21 +3,30 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PaymentController;
+use App\Models\StoryCard;
 
 /*
 |--------------------------------------------------------------------------
 | API Routes
 |--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "api" middleware group. Make something great!
-|
 */
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
 Route::any('razorpay-webhook', [PaymentController::class, 'razorpayWebhook']);
+
+
+/*
+|--------------------------------------------------------------------------
+| Mind Rewire Navigator - Story Cards API
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/story-cards', function () {
+    return response()->json(
+        \App\Models\StoryCard::where('is_active', true)->get()
+    );
+});
+
