@@ -14,24 +14,47 @@ class NavigatorController extends Controller
         return view('navigator.start');
     }
 
-    public function analyze(Request $request)
-    {
-        $response = Http::timeout(60)->post('http://127.0.0.1:8000/navigator
-', [
+//     public function analyze(Request $request)
+//     {
+//         $response = Http::timeout(60)->post('http://127.0.0.1:8000/navigator
+// ', [
+//             'text' => $request->text,
+//             'age_group' => $request->age_group
+//         ]);
+
+//         if (!$response->successful()) {
+//             return back()->with('error', 'Unable to analyze right now.');
+//         }
+
+//         session([
+//             'navigator_result' => $response->json()
+//         ]);
+
+//         return redirect('/navigator/results');
+//     }
+
+public function analyze(Request $request)
+{
+    $response = Http::timeout(120)->post(
+        'http://127.0.0.1:8000/navigator', // local
+        // 'https://mind-rewire-rag.onrender.com/navigator', // production
+        [
             'text' => $request->text,
             'age_group' => $request->age_group
-        ]);
+        ]
+    );
 
-        if (!$response->successful()) {
-            return back()->with('error', 'Unable to analyze right now.');
-        }
-
-        session([
-            'navigator_result' => $response->json()
-        ]);
-
-        return redirect('/navigator/results');
+    if (!$response->successful()) {
+        return back()->with('error', 'Unable to analyze right now.');
     }
+
+    session([
+        'navigator_result' => $response->json()
+    ]);
+
+    return redirect('/navigator/results');
+}
+
 
     public function results()
     {
