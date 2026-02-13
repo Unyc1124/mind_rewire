@@ -891,27 +891,57 @@
 
 
 //header logo r
-.logo-wrap {
+// .logo-wrap {
+//     position: relative;
+//     display: inline-block;
+// }
+
+// .logo-wrap img {
+//     height: 58px;
+//     display: block;
+//     object-fit: contain;
+// }
+
+// .trademark {
+//     position: absolute;
+//     top: -2px;
+//     right: -10px;
+//     font-size: 14px;
+//     font-weight: 600;
+//     color: #1E3A8A;
+//     line-height: 1;
+// }
+/* Logo trademark positioning */
+.l_logo .white_logo .logo-wrap {
     position: relative;
     display: inline-block;
 }
 
-.logo-wrap img {
-    height: 58px;
-    display: block;
-    object-fit: contain;
-}
-
-.trademark {
+.l_logo .white_logo .trademark {
     position: absolute;
-    top: -2px;
-    right: -10px;
-    font-size: 14px;
+    top: -5px;
+    right: -12px;
+    font-size: 10px;
     font-weight: 600;
-    color: #1E3A8A;
+    color: #fff;
     line-height: 1;
 }
 
+/* For gray logo if needed */
+.l_logo .gray_logo {
+    position: relative;
+    display: inline-block;
+}
+
+.l_logo .gray_logo .trademark {
+    position: absolute;
+    top: -5px;
+    right: -12px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1;
+}
 //iso certifications
 .footer-iso-badge {
     margin-top: 18px;

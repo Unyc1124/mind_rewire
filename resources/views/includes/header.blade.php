@@ -13,8 +13,11 @@
 </a>
 
                 <a href="{{ url('/') }}" class="gray_logo">
-                    <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" alt="logo image" />
-                </a>
+    <span class="logo-wrap">
+        <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" alt="logo image" />
+        <span class="trademark">®</span>
+    </span>
+</a>
             </div>
             <div class="header_mid customscroll ml-auto">
                 <div class="main_navigation">
