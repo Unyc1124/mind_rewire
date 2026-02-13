@@ -35,12 +35,12 @@
 </div>
 
 <!-- ISO Certification Badge -->
-<div class="footer-iso-badge">
+<!-- <div class="footer-iso-badge">
     <div class="iso-inline">
         <img src="{{ asset('assets/images/iso_certified.png') }}" alt="ISO 9001:2015 Certified">
         <span>ISO 9001:2015 Certified Organization</span>
     </div>
-</div>
+</div> -->
 
 
 
@@ -80,6 +80,14 @@
                             </svg>
                             Park Street, Wakad, Pune, Maharashtra, India - 411057
                         </a>
+                    </li>
+                     <li>
+                        <div class="footer-iso-badge">
+    <div class="iso-inline">
+        <img src="{{ asset('assets/images/iso_certified.png') }}" alt="ISO 9001:2015 Certified">
+        <span>ISO 9001:2015 Certified Organization</span>
+    </div>
+</div>
                     </li>
                 </ul>
             </div>
