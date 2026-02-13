@@ -370,7 +370,7 @@ $help = getSection(
                             <h4>{{ $product->name }}</h4>
                             <p>{{ \Illuminate\Support\Str::limit($product->description, 70) }}</p>
 
-                            <a href="{{ url('/product/'.$product->slug) }}" class="view-btn">
+                            <a href="{{ url('products/' . $product->slug) }}" class="view-btn">
                                 View
                             </a>
                         </div>

@@ -860,140 +860,36 @@
     padding: 12px 32px;
 }
 
-// .mw-actions {
-//     display: inline-flex !important;
-//     align-items: center;
-//     gap: 8px;
-// }
+/* === ISO Badge - Clean Version === */
+.footer-iso-badge {
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
 
-// .mw-actions-wrapper {
-//     display: flex;
-//     justify-content: center;
-// }
+.iso-inline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
 
-// //wishlist badme
-// .mw-wishlist-btn {
-//     background: transparent;
-//     border: none;
-//     font-size: 22px;
-//     cursor: pointer;
-//     color: #1D3D91;
-//     transition: transform 0.0s ease, color 0.0s ease;
-// }
+.iso-inline img,
+.footer-iso-badge img {
+    height: 32px !important;
+    width: auto !important;
+    display: inline-block;
+}
 
-// .mw-wishlist-btn:hover {
-//     transform: scale(1.1);
-// }
+.iso-inline span {
+    font-size: 13px;
+    color: #000;
+    font-weight: 500;
+    line-height: 1;
+}
 
-// .mw-wishlist-btn.active {
-//     color: #E63946; /* red heart */
-// }
-
-
-//header logo r
-// .logo-wrap {
-//     position: relative;
-//     display: inline-block;
-// }
-
-// .logo-wrap img {
-//     height: 58px;
-//     display: block;
-//     object-fit: contain;
-// }
-
-// .trademark {
-//     position: absolute;
-//     top: -2px;
-//     right: -10px;
-//     font-size: 14px;
-//     font-weight: 600;
-//     color: #1E3A8A;
-//     line-height: 1;
-// }
-/* Logo trademark positioning */
-// .l_logo .white_logo .logo-wrap {
-//     position: relative;
-//     display: inline-block;
-// }
-
-// .l_logo .white_logo .trademark {
-//     position: absolute;
-//     top: -5px;
-//     right: -12px;
-//     font-size: 10px;
-//     font-weight: 600;
-//     color: #fff;
-//     line-height: 1;
-// }
-
-// /* For gray logo if needed */
-// .l_logo .gray_logo {
-//     position: relative;
-//     display: inline-block;
-// }
-
-// .l_logo .gray_logo .trademark {
-//     position: absolute;
-//     top: -5px;
-//     right: -12px;
-//     font-size: 10px;
-//     font-weight: 600;
-//     color: #333;
-//     line-height: 1;
-// }
-// //iso certifications
-// .footer-iso-badge {
-//     margin-top: 18px;
-// }
-
-// .footer-iso-badge img {
-//     height: 55px;
-//     display: block;
-// }
-
-// .footer-iso-badge p {
-//     font-size: 12px;
-//     color: #555;
-//     margin-top: 5px;
-// }
-
-// //making image smaller 
-// /* === ISO Badge Final Clean CSS === */
-
-// .footer-iso-badge {
-//     margin-top: 15px;
-// }
-
-// .iso-inline {
-//     display: flex;
-//     align-items: center;
-//     gap: 12px;
-// }
-
-// .iso-inline img {
-//     height: 32px;
-//     width: auto;
-//     display: inline-block;
-// }
-
-// .iso-inline span {
-//     font-size: 13px;
-//     color: #000;
-//     font-weight: 500;
-//     line-height: 1;
-// }
-
-// /* Normalize text block spacing */
-// .c_info p {
-//     margin-bottom: 12px;   /* consistent spacing after paragraph */
-// }
-
-// /* ISO badge spacing */
-// .footer-iso-badge {
-//     margin-top: 0px;       /* remove extra top margin */
-//     margin-bottom: 12px;   /* same spacing as other items */
-// }
+/* Normalize text block spacing */
+.c_info p {
+    margin-bottom: 12px;
+}
 
 /* Logo trademark positioning */
 .l_logo .white_logo .logo-wrap {
@@ -1025,35 +921,4 @@
     font-weight: 600;
     color: #333;
     line-height: 1;
-}
-
-/* === ISO Badge - Clean Version === */
-.footer-iso-badge {
-    margin-top: 0px;
-    margin-bottom: 12px;
-}
-
-.iso-inline {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.iso-inline img,
-.footer-iso-badge img {
-    height: 32px !important;  /* Added !important to override any other styles */
-    width: auto !important;
-    display: inline-block;
-}
-
-.iso-inline span {
-    font-size: 13px;
-    color: #000;
-    font-weight: 500;
-    line-height: 1;
-}
-
-/* Normalize text block spacing */
-.c_info p {
-    margin-bottom: 12px;
 }
