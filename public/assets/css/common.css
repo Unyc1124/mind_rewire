@@ -259,3 +259,17 @@
     visibility: visible;
     transform: translateY(0);
 }
+
+.logo-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.registered-mark {
+    position: absolute;
+    top: 5%;
+    right: -8%;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 600;
+}
