@@ -860,31 +860,7 @@
     padding: 12px 32px;
 }
 
-/* === ISO Badge - Clean Version === */
-.footer-iso-badge {
-    margin-top: 0px;
-    margin-bottom: 12px;
-}
 
-.iso-inline {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.iso-inline img,
-.footer-iso-badge img {
-    height: 32px !important;
-    width: auto !important;
-    display: inline-block;
-}
-
-.iso-inline span {
-    font-size: 13px;
-    color: #000;
-    font-weight: 500;
-    line-height: 1;
-}
 // .logo-wrapper {
 //     position: relative;
 //     display: inline-block;
