@@ -1,0 +1,19 @@
+.top_banner {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.top_banner .textbox {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banner_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}

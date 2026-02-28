@@ -11,6 +11,7 @@ class NavigatorController extends Controller
 {
     public function start()
     {
+        Session::forget('navigator_result');
         return view('navigator.start');
     }
 

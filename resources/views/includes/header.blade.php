@@ -1,32 +1,26 @@
 <div class="header" id="header">
     <div class="header_bottom">
         <div class="custom_container">
-            <!-- <div class="l_logo">
-                <a href="{{ url('/') }}" class="white_logo">
-                    <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" alt="logo image" />
-                </a>
-                <a href="{{ url('/') }}" class="gray_logo">
-                    <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" alt="logo image" />
-                </a>
-            </div> -->
-           
-           <div class="l_logo">
+            <div class="l_logo">
                 <!-- <a href="{{ url('/') }}" class="white_logo">
                     <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" alt="logo image" />
                 </a> -->
-                <a href="{{ url('/') }}" class="white_logo">
-    <span class="logo-wrap">
-        <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" alt="Mind Rewire Logo" />
-        <span class="trademark">®</span>
-    </span>
+                <a href="{{ url('/') }}" class="logo-wrapper">
+    <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" 
+         alt="logo image" class="logo-img" />
+    <span class="registered-mark">®</span>
 </a>
-
                 <a href="{{ url('/') }}" class="gray_logo">
-    <span class="logo-wrap">
-        <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" alt="logo image" />
-        <span class="trademark">®</span>
-    </span>
+                    <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" alt="logo image" />
+                </a>
+                <!-- <a href="{{ url('/') }}" class="white_logo" style="position: relative; display: inline-block;">
+    <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" alt="logo image" />
+    <sup style="position: absolute; top: 2px; right: -10px; font-size: 10px; color: #fff;">®</sup>
 </a>
+<a href="{{ url('/') }}" class="gray_logo" style="position: relative; display: inline-block;">
+    <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" alt="logo image" />
+    <sup style="position: absolute; top: 2px; right: -10px; font-size: 10px; color: #333;">®</sup>
+</a> -->
             </div>
             <div class="header_mid customscroll ml-auto">
                 <div class="main_navigation">
@@ -366,6 +360,7 @@
                         </a>
                     </li>
 
+                    @if(session('navigator_result'))
                     <li>
                         <a href="{{ url('navigator/results') }}">
                             
@@ -379,6 +374,7 @@
                             Your Plan
                         </a>
                     </li>
+                    @endif
 
                     <li>
                         <a href="{{ url('navigator/stories') }}">
