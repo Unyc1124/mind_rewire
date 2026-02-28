@@ -898,18 +898,37 @@
 //     color: #1E40AF;
 // }
 
+// .logo-wrapper {
+//     position: relative;
+//     display: inline-block;
+// }
+
+// .registered-mark {
+//     position: absolute;
+//     top: 2px;
+//     right: -8px;
+//     font-size: 10px;
+//     font-weight: 600;
+//     line-height: 1;
+//     color: #1E40AF;
+// }
+
 .logo-wrapper {
     position: relative;
     display: inline-block;
 }
 
+.logo-img {
+    display: block;
+}
+
 .registered-mark {
     position: absolute;
-    top: 2px;
-    right: -8px;
-    font-size: 10px;
-    font-weight: 600;
+    top: 8%;
+    right: -6%;
+    font-size: 12px;
     line-height: 1;
+    font-weight: 600;
     color: #1E40AF;
 }
 
