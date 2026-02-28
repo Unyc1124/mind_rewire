@@ -1,7 +1,10 @@
 @extends('layouts.mainsite')
 
 @section('title')
-<title>{{ $product->name }} | Mind Rewire</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ $product->name }} | Mind Rewire</title>
 @endsection
 
 @section('css')
@@ -116,7 +119,7 @@
 </form> -->
 
                             <!-- <button class="mw-secondary-btn">Buy Now</button> -->
-                             <form method="POST" action="{{ route('buy.now') }}">
+                             <!-- <form method="POST" action="{{ route('buy.now') }}">
     @csrf
 
     <input type="hidden" name="product_id" value="{{ $product->id }}">
@@ -126,8 +129,20 @@
     <button type="submit" class="mw-primary-btn">
         Buy Now
     </button>
-</form>
+</form> -->
+<!-- <form method="POST" action="{{ route('checkout.buyNow') }}">
+    @csrf
+    <input type="hidden" name="product_id" value="{{ $product->id }}">
+    <button type="submit">Buy Now</button>
+</form> -->
+<form method="POST" action="{{ route('checkout.buyNow') }}">
+    @csrf
+    <input type="hidden" name="product_id" value="{{ $product->id }}">
 
+    <button type="submit" class="mw-primary-btn">
+        Buy Now
+    </button>
+</form>
 
 
                             <!-- <button class="mw-wishlist-btn" title="Add to wishlist">♡</button> -->

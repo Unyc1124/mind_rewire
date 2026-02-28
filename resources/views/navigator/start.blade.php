@@ -1,7 +1,10 @@
 @extends('layouts.mainsite')
 
 @section('title')
-<title>Mind Rewire | Start Assessment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mind Rewire | Start Assessment</title>
 @endsection
 
 @section('css')
@@ -17,23 +20,27 @@
     --border-soft: #e5e7eb;
 }
 
-.container {
+/* ── Layout container ── */
+.assessment-container {
     max-width: 1200px;
     margin: 40px auto 80px;
+    padding: 0 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* ✅ 50–50 */
+    grid-template-columns: 1fr 1fr;
     gap: 32px;
+    box-sizing: border-box;
 }
 
-/* ---------- CARD ---------- */
+/* ── Card ── */
 .card {
     background: #ffffff;
     border-radius: 16px;
     padding: 28px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
 }
 
-/* ---------- BADGES ---------- */
+/* ── Badges ── */
 .badges {
     display: grid;
     grid-template-columns: 1fr;
@@ -51,28 +58,34 @@
     margin: 0;
     font-size: 15px;
     color: var(--text-dark);
+    line-height: 1.4;
 }
 
 .badge p {
-    margin-top: 6px;
+    margin: 6px 0 0;
     font-size: 13px;
     color: var(--text-muted);
+    line-height: 1.4;
 }
 
-/* ---------- GUIDELINES ---------- */
+/* ── Guidelines card ── */
 .guidelines h3 {
-    margin-bottom: 18px;
+    margin: 0 0 18px;
     color: var(--text-dark);
+    font-size: 18px;
 }
 
 .guidelines ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .guidelines li {
     margin-bottom: 16px;
     color: var(--text-dark);
+    font-size: 14px;
+    line-height: 1.4;
 }
 
 .guidelines li span {
@@ -82,6 +95,7 @@
     color: var(--text-muted);
 }
 
+/* ── Note text ── */
 .note {
     font-size: 13px;
     color: var(--text-muted);
@@ -89,7 +103,14 @@
     line-height: 1.5;
 }
 
-/* ---------- FORM ---------- */
+/* ── Form heading ── */
+.card h2 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    color: var(--text-dark);
+}
+
+/* ── Form elements ── */
 label {
     display: block;
     margin-top: 14px;
@@ -105,6 +126,14 @@ select {
     border: 1px solid var(--border-soft);
     font-size: 14px;
     background: #fff;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--primary);
 }
 
 textarea {
@@ -122,8 +151,10 @@ textarea {
             #fafafa 27px,
             #f0f1f5 28px
         );
-    resize: none;
+    resize: vertical; /* allow vertical resize, not horizontal */
     outline: none;
+    box-sizing: border-box;
+    min-height: 180px;
 }
 
 textarea:focus {
@@ -137,7 +168,7 @@ textarea:focus {
     border-color: var(--primary);
 }
 
-button {
+button[type="submit"] {
     width: 100%;
     margin-top: 22px;
     padding: 16px;
@@ -149,57 +180,167 @@ button {
     color: #ffffff;
     cursor: not-allowed;
     transition: all 0.2s ease;
+    box-sizing: border-box;
+    touch-action: manipulation; /* better tap response on mobile */
 }
 
-button.active {
+button[type="submit"].active {
     background: var(--primary);
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+button[type="submit"].active:hover {
+    background: #2535a0;
+    transform: translateY(-1px);
+}
 
-    .navigator-start {
-        padding: 0 14px;
+/* ==============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================== */
+
+/* ── Tablet: 768px – 991px ── */
+@media (max-width: 991px) {
+    .assessment-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin: 30px auto 60px;
     }
 
-    .navigator-start h1 {
-        font-size: 26px;
-        text-align: center;
-    }
-
-    .navigator-start p {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .assessment-form {
-        padding: 20px;
+    /* On tablet, show badges in a row */
+    .badges {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
     }
 
     textarea {
-        font-size: 14px;
-        min-height: 120px;
-    }
-
-    select {
-        font-size: 14px;
-    }
-
-    button[type="submit"] {
-        width: 100%;
-        padding: 16px;
-        font-size: 15px;
+        height: 220px;
     }
 }
 
+/* ── Mobile: max 767px ── */
+@media (max-width: 767px) {
+    .assessment-container {
+        grid-template-columns: 1fr;   /* ← THIS was the main break */
+        gap: 20px;
+        margin: 20px auto 50px;
+        padding: 0 14px;
+    }
+
+    /* Badges stack in single column on small phones */
+    .badges {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 16px;
+    }
+
+    .badge {
+        padding: 14px;
+        border-radius: 12px;
+    }
+
+    .badge h4 {
+        font-size: 14px;
+    }
+
+    .badge p {
+        font-size: 12px;
+    }
+
+    /* Card */
+    .card {
+        padding: 20px 18px;
+        border-radius: 14px;
+    }
+
+    /* Guidelines */
+    .guidelines h3 {
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+
+    .guidelines li {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    /* Form heading */
+    .card h2 {
+        font-size: 18px;
+    }
+
+    /* Select */
+    select {
+        padding: 12px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    /* Textarea — no fixed height on mobile */
+    textarea {
+        height: auto;
+        min-height: 160px;
+        font-size: 14px;
+        padding: 14px;
+        border-radius: 12px;
+        line-height: 1.7;
+    }
+
+    /* Char count note */
+    .note {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    /* Submit button — full width, large tap target */
+    button[type="submit"] {
+        margin-top: 16px;
+        padding: 16px;
+        font-size: 15px;
+        border-radius: 12px;
+        min-height: 52px; /* good tap target */
+    }
+
+    label {
+        font-size: 13px;
+        margin-top: 12px;
+    }
+}
+
+/* ── Extra small: max 400px ── */
+@media (max-width: 400px) {
+    .assessment-container {
+        padding: 0 12px;
+        margin: 16px auto 40px;
+    }
+
+    .card {
+        padding: 16px 14px;
+    }
+
+    .card h2 {
+        font-size: 16px;
+    }
+
+    textarea {
+        min-height: 140px;
+        font-size: 13px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 14px;
+    }
+}
 </style>
 @endsection
 
 @section('content')
 
-<div class="container">
+{{-- Renamed from .container to .assessment-container
+     to avoid collision with Bootstrap's .container class --}}
+<div class="assessment-container">
 
-    {{-- LEFT SIDE (50%) --}}
+    {{-- LEFT SIDE --}}
     <div>
 
         <div class="badges">
@@ -233,7 +374,7 @@ button.active {
                 </li>
                 <li>
                     <strong>Take Your Time</strong>
-                    <span>There’s no rush — reflect carefully</span>
+                    <span>There's no rush — reflect carefully</span>
                 </li>
                 <li>
                     <strong>Recent Experiences</strong>
@@ -248,16 +389,15 @@ button.active {
         </div>
     </div>
 
-    {{-- RIGHT SIDE (50%) --}}
+    {{-- RIGHT SIDE --}}
     <div class="card">
         <h2>Start Your Assessment</h2>
 
         <p class="note">
             Describe your emotions, thoughts, sleep patterns, energy levels,
-            or any challenges you’re facing.
+            or any challenges you're facing.
         </p>
 
-        {{-- 🔗 CONNECTED TO BACKEND RAG --}}
         <form method="POST" action="/navigator/analyze">
             @csrf
 
@@ -274,7 +414,7 @@ button.active {
             <textarea
                 name="text"
                 id="assessmentText"
-                placeholder="Over the past few weeks, I’ve been feeling overwhelmed with work. My sleep has been disrupted and I often feel anxious..."
+                placeholder="Over the past few weeks, I've been feeling overwhelmed with work. My sleep has been disrupted and I often feel anxious..."
                 required></textarea>
 
             <div class="note">
@@ -291,8 +431,8 @@ button.active {
 
 <script>
 const textarea = document.getElementById('assessmentText');
-const btn = document.getElementById('submitBtn');
-const count = document.getElementById('charCount');
+const btn      = document.getElementById('submitBtn');
+const count    = document.getElementById('charCount');
 
 btn.disabled = true;
 

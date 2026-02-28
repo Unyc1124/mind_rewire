@@ -10,6 +10,9 @@
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
 
+//internship-page css
+@import "internship";
+
 
 /* ===============================
    PRODUCTS PAGE – Mind Rewire
@@ -860,52 +863,468 @@
     padding: 12px 32px;
 }
 
+/* ==============================================
+   PRODUCTS PAGE – MOBILE RESPONSIVE ADDITIONS
+   Add this at the bottom of your app.scss
+   (or replace the existing mw- blocks above)
+   ============================================== */
 
-// .logo-wrapper {
-//     position: relative;
-//     display: inline-block;
-// }
+/* ── Featured Card – fix grid to flex for responsiveness ── */
+.mw-featured-card {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(29, 61, 145, 0.12);
+    gap: 0;
+}
 
-// .registered-mark {
-//     position: absolute;
-//     top: -6px;      /* move slightly upward */
-//     right: -13px;   /* move slightly outside right edge */
-//     font-size: 20px;
-//     color: #1E40AF;
-// }
+.mw-featured-image {
+    position: relative;
+    background: #f5f7fb;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52%;
+    min-width: 52%;
+    flex-shrink: 0;
+}
 
-// .logo-wrapper {
-//     position: relative;
-//     display: inline-block;
-// }
+.mw-featured-image img {
+    max-width: 100%;
+    max-height: 420px;
+    object-fit: contain;
+}
 
-// .registered-mark {
-//     position: absolute;
-//     top: 2px;
-//     right: -8px;
-//     font-size: 10px;
-//     font-weight: 600;
-//     line-height: 1;
-//     color: #1E40AF;
-// }
+.mw-featured-content {
+    padding: 60px;
+    flex: 1;
+    min-width: 0; /* prevent overflow */
+}
 
-// .logo-wrapper {
-//     position: relative;
-//     display: inline-block;
-// }
+.mw-featured-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin-bottom: 16px;
+    word-break: break-word;
+}
 
-// .logo-img {
-//     display: block;
-// }
+.mw-featured-footer {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
 
-// .registered-mark {
-//     position: absolute;
-//     top: 8%;
-//     right: -6%;
-//     font-size: 12px;
-//     line-height: 1;
-//     font-weight: 600;
-//     color: #1E40AF;
-// }
+/* ── Collection Header ── */
+.mw-collection-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
 
-@import "internship";
+.mw-collection-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.mw-collection-action {
+    flex-shrink: 0;
+}
+
+/* ── Product Card footer – price + actions stacked ── */
+.mw-product-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mw-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: nowrap;
+}
+
+/* ── Qty Selector ── */
+.mw-qty-selector {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid #dce6f5;
+    border-radius: 999px;
+    overflow: hidden;
+    background: #f4f7ff;
+    flex-shrink: 0;
+}
+
+.qty-btn {
+    background: none;
+    border: none;
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1D3D91;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.qty-btn:hover {
+    background: #dce6ff;
+}
+
+.qty-count {
+    min-width: 28px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1D3D91;
+    user-select: none;
+    line-height: 1;
+}
+
+/* ── Product Detail page – actions row ── */
+.mw-product-actions {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* ── Checkout card ── */
+.mw-checkout-card {
+    max-width: 520px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(29, 61, 145, 0.08);
+}
+
+/* ── Order summary ── */
+.mw-order-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    background: #F5F7FF;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 24px 0;
+    border: 1px solid #E2E8FF;
+    flex-wrap: wrap;
+}
+
+/* ==============================================
+   BREAKPOINTS
+   ============================================== */
+
+/* ── Large tablet: 992px – 1199px ── */
+@media (max-width: 1199px) {
+    .mw-featured-content {
+        padding: 40px;
+    }
+
+    .mw-featured-content h3 {
+        font-size: 26px;
+    }
+
+    .mw-product-detail {
+        padding: 36px;
+    }
+}
+
+/* ── Tablet: 768px – 991px ── */
+@media (max-width: 991px) {
+
+    /* Featured card – stack vertically */
+    .mw-featured-card {
+        flex-direction: column;
+    }
+
+    .mw-featured-image {
+        width: 100%;
+        min-width: 100%;
+        padding: 30px;
+        aspect-ratio: 16 / 9;
+    }
+
+    .mw-featured-image img {
+        max-height: 280px;
+    }
+
+    .mw-featured-content {
+        padding: 36px;
+        width: 100%;
+    }
+
+    .mw-featured-content h3 {
+        font-size: 24px;
+    }
+
+    /* Product detail */
+    .mw-product-detail {
+        padding: 28px;
+    }
+
+    .mw-product-title {
+        font-size: 26px;
+    }
+
+    .mw-product-price {
+        font-size: 22px;
+    }
+
+    /* Success / checkout */
+    .mw-stepper {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}
+
+/* ── Mobile: max 767px ── */
+@media (max-width: 767px) {
+
+    /* Featured */
+    .mw-featured-wrapper {
+        margin: 40px 0;
+    }
+
+    .mw-featured-card {
+        flex-direction: column;
+        border-radius: 18px;
+    }
+
+    .mw-featured-image {
+        width: 100%;
+        min-width: 100%;
+        padding: 24px;
+        aspect-ratio: 4 / 3;
+    }
+
+    .mw-featured-image img {
+        max-height: 220px;
+    }
+
+    .mw-featured-badge {
+        font-size: 12px;
+        padding: 6px 12px;
+        top: 14px;
+        left: 14px;
+    }
+
+    .mw-featured-content {
+        padding: 24px 20px;
+        width: 100%;
+    }
+
+    .mw-featured-content h3 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .mw-featured-content p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 16px;
+    }
+
+    .mw-featured-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .mw-featured-footer .mw-primary-btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* Collection header – stack */
+    .mw-collection-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+    }
+
+    .mw-collection-action {
+        width: 100%;
+    }
+
+    .mw-collection-action .mw-primary-btn,
+    .mw-collection-action button.mw-primary-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Product cards – Bootstrap handles cols,
+       but fix internal layout */
+    .mw-product-image {
+        height: 200px;
+    }
+
+    .mw-product-image img {
+        max-height: 160px;
+    }
+
+    .mw-product-body {
+        padding: 16px;
+    }
+
+    .mw-product-title {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+
+    .mw-product-desc {
+        font-size: 13px;
+        margin-bottom: 14px;
+    }
+
+    .mw-price {
+        font-size: 16px;
+    }
+
+    .mw-btn {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+    /* Qty selector – bigger tap targets */
+    .qty-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+    }
+
+    .qty-count {
+        min-width: 30px;
+        font-size: 15px;
+    }
+
+    /* Product detail page */
+    .mw-product-detail {
+        padding: 20px 16px;
+        border-radius: 14px;
+    }
+
+    .mw-product-detail-image {
+        padding: 24px;
+        border-radius: 12px;
+    }
+
+    .mw-product-detail-image img {
+        max-height: 260px;
+    }
+
+    .mw-product-title {
+        font-size: 22px;
+    }
+
+    .mw-product-price {
+        font-size: 20px;
+    }
+
+    .mw-product-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .mw-primary-btn,
+    .mw-secondary-btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding: 12px 20px;
+    }
+
+    /* About inline */
+    .mw-about-inline {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    /* Checkout */
+    .mw-checkout-card {
+        padding: 20px 16px;
+        border-radius: 12px;
+    }
+
+    .mw-checkout-title {
+        font-size: 20px;
+    }
+
+    /* Order summary */
+    .mw-order-summary {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 14px 16px;
+    }
+
+    .mw-order-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .mw-order-image img {
+        max-width: 42px;
+        max-height: 42px;
+    }
+
+    /* Stepper */
+    .mw-stepper {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mw-stepper .step {
+        font-size: 12px;
+        padding: 5px 12px;
+    }
+
+    /* Success card */
+    .mw-success-card {
+        padding: 30px 20px;
+        border-radius: 14px;
+    }
+}
+
+/* ── Extra small: max 400px ── */
+@media (max-width: 400px) {
+    .mw-featured-content h3 {
+        font-size: 18px;
+    }
+
+    .mw-price {
+        font-size: 15px;
+    }
+
+    .mw-primary-btn,
+    .mw-btn {
+        font-size: 12px;
+        padding: 10px 14px;
+    }
+
+    .mw-product-title {
+        font-size: 20px;
+    }
+
+    .mw-product-price {
+        font-size: 18px;
+    }
+}

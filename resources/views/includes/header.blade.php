@@ -340,6 +340,9 @@
                                 Wellness Products
                             </a>
                         </li>
+                        <li>
+                            <a href="{{ url('internship') }}">Internships</a>
+                        </li>
 
                         <!-- <li>
                             <a href="{{ url('assessments') }}">Navigator</a>
