@@ -6,7 +6,14 @@
                     <a href="{{url('/')}}">
                         <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" alt="logo">
                     </a>
-                </div>
+                </div> -->
+                <div class="f_logo">
+    <a href="{{ url('/') }}" class="logo-wrapper">
+        <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" 
+             alt="logo" class="logo-img">
+        <span class="registered-mark">®</span>
+    </a>
+</div>
                 <div class="c_info">
                     <strong class="btext">
                         Mind Rewire - Your Path to Inner Peace
@@ -16,35 +23,7 @@
                         neuroscience and empathy, we
                         help you become the best version of your true self—without changing who you are.
                     </p>
-                </div> -->
-                <div class="f_logo">
-    <a href="{{ url('/') }}">
-        <img src="{{ url('assets/images/common-images/logo_mindrewire.png') }}" alt="logo">
-        <span class="trademark">®</span>
-    </a>
-</div>
-
-<div class="c_info">
-    <strong class="btext">
-        Mind Rewire - Your Path to Inner Peace
-    </strong>
-    <p>
-        Mind Rewire is your safe space to transform emotional overwhelm into clarity. Backed by
-        neuroscience and empathy, we help you become the best version of your true self—without changing who you are.
-    </p>
-</div>
-
-<!-- ISO Certification Badge -->
-<!-- <div class="footer-iso-badge">
-    <div class="iso-inline">
-        <img src="{{ asset('assets/images/iso_certified.png') }}" alt="ISO 9001:2015 Certified">
-        <span>ISO 9001:2015 Certified Organization</span>
-    </div>
-</div> -->
-
-
-
-
+                </div>
                 <ul class="contact_info">
                     <li>
                         <a href="tel:+917758023819">

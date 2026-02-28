@@ -885,40 +885,17 @@
     font-weight: 500;
     line-height: 1;
 }
-
-/* Normalize text block spacing */
-.c_info p {
-    margin-bottom: 12px;
-}
-
-/* Logo trademark positioning */
-.l_logo .white_logo .logo-wrap {
+.logo-wrapper {
     position: relative;
     display: inline-block;
 }
 
-.l_logo .white_logo .trademark {
+.registered-mark {
     position: absolute;
-    top: -5px;
-    right: -12px;
-    font-size: 10px;
-    font-weight: 600;
-    color: #fff;
-    line-height: 1;
+    top: -6px;      /* move slightly upward */
+    right: -13px;   /* move slightly outside right edge */
+    font-size: 20px;
+    color: #1E40AF;
 }
 
-/* For gray logo if needed */
-.l_logo .gray_logo {
-    position: relative;
-    display: inline-block;
-}
-
-.l_logo .gray_logo .trademark {
-    position: absolute;
-    top: -5px;
-    right: -12px;
-    font-size: 10px;
-    font-weight: 600;
-    color: #333;
-    line-height: 1;
-}
+@import "internship";
