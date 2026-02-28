@@ -188,6 +188,36 @@ class CheckoutController extends Controller
 //     ]);
 // }
 
+//single product flow function
+// public function buyNow(Request $request)
+// {
+//     $product = Product::findOrFail($request->product_id);
+
+//     session()->put('selected_products', [
+//         $product->id => 1
+//     ]);
+
+//     return redirect()->route('checkout.details');
+// }
+
+public function buyNow(Request $request)
+{
+    // Validate product
+    $request->validate([
+        'product_id' => 'required|exists:products,id',
+    ]);
+
+    // Clear previous selections
+    session()->forget('selected_products');
+
+    // Put only this product with quantity 1
+    session()->put('selected_products', [
+        $request->product_id => 1
+    ]);
+
+    return redirect()->route('checkout.details');
+}
+
 public function paymentSuccess(Request $request)
 {
     $request->validate([
