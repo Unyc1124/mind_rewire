@@ -885,6 +885,19 @@
     font-weight: 500;
     line-height: 1;
 }
+// .logo-wrapper {
+//     position: relative;
+//     display: inline-block;
+// }
+
+// .registered-mark {
+//     position: absolute;
+//     top: -6px;      /* move slightly upward */
+//     right: -13px;   /* move slightly outside right edge */
+//     font-size: 20px;
+//     color: #1E40AF;
+// }
+
 .logo-wrapper {
     position: relative;
     display: inline-block;
@@ -892,9 +905,11 @@
 
 .registered-mark {
     position: absolute;
-    top: -6px;      /* move slightly upward */
-    right: -13px;   /* move slightly outside right edge */
-    font-size: 20px;
+    top: 2px;
+    right: -8px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1;
     color: #1E40AF;
 }
 
