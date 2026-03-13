@@ -7,7 +7,7 @@ use App\Http\Controllers\SiteMapController;
 use App\Http\Controllers\MainSiteController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\CartController;
+// use App\Http\Controllers\CartController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\CheckoutController;
@@ -77,11 +77,11 @@ Route::group(['middleware' => ['variable_replace']], function () {
     Route::get('products', [ProductController::class, 'index']);
     Route::get('products/{slug}', [ProductController::class, 'show']);
 
-    /* ---------------- CART ---------------- */
-    Route::post('cart/add', [CartController::class, 'add'])->name('cart.add');
-    Route::get('cart', [CartController::class, 'index'])->name('cart.index');
-    Route::get('cart/remove/{id}', [CartController::class, 'remove'])->name('cart.remove');
-    Route::get('cart/clear', [CartController::class, 'clear'])->name('cart.clear');
+    // /* ---------------- CART ---------------- */
+    // Route::post('cart/add', [CartController::class, 'add'])->name('cart.add');
+    // Route::get('cart', [CartController::class, 'index'])->name('cart.index');
+    // Route::get('cart/remove/{id}', [CartController::class, 'remove'])->name('cart.remove');
+    // Route::get('cart/clear', [CartController::class, 'clear'])->name('cart.clear');
 
     /* ---------------- CHECKOUT ---------------- */
     Route::get('checkout', [OrderController::class, 'checkout'])->name('checkout');
@@ -120,10 +120,10 @@ Route::group(['middleware' => ['variable_replace']], function () {
 Route::get('order-success/{id}', [OrderController::class, 'success'])
     ->name('order.success');
 
-/* ---------------- DEBUG ---------------- */
-Route::get('test-cart', function () {
-    dd(session('cart'));
-});
+// /* ---------------- DEBUG ---------------- */
+// Route::get('test-cart', function () {
+//     dd(session('cart'));
+// });
 
 /* ---------------- TEST MAIL ---------------- */
 Route::get('test-mail', function () {
