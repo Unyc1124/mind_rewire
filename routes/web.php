@@ -12,6 +12,8 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\NavigatorController;
+use App\Http\Controllers\BrochureController;
+
 
 
 // test-mail
@@ -289,8 +291,14 @@ Route::prefix('navigator')->group(function () {
     Route::view('/safety', 'navigator.safety');
 });
 
+//internship page routing 
+Route::get('/internship', function () {
+    return view('internships.internship');
+});
 
 
+//brochure download path
+Route::post('/download-brochure', [BrochureController::class, 'download']);
 
 
 
