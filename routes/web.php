@@ -8,7 +8,7 @@ use App\Http\Controllers\MainSiteController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ProductController;
 // use App\Http\Controllers\CartController;
-use App\Http\Controllers\OrderController;
+// use App\Http\Controllers\OrderController;
 use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\NavigatorController;
@@ -83,9 +83,9 @@ Route::group(['middleware' => ['variable_replace']], function () {
     // Route::get('cart/remove/{id}', [CartController::class, 'remove'])->name('cart.remove');
     // Route::get('cart/clear', [CartController::class, 'clear'])->name('cart.clear');
 
-    /* ---------------- CHECKOUT ---------------- */
-    Route::get('checkout', [OrderController::class, 'checkout'])->name('checkout');
-    Route::post('place-order', [OrderController::class, 'placeOrder'])->name('place.order');
+    // /* ---------------- CHECKOUT ---------------- */
+    // Route::get('checkout', [OrderController::class, 'checkout'])->name('checkout');
+    // Route::post('place-order', [OrderController::class, 'placeOrder'])->name('place.order');
 
     /* ---------------- PAYMENT (CART + BUY NOW) ---------------- */
     // Route::get('checkout/payment/{order}', [OrderController::class, 'payment'])
@@ -97,8 +97,8 @@ Route::group(['middleware' => ['variable_replace']], function () {
     Route::post('checkout/payment-failed', [OrderController::class, 'paymentFailed'])
         ->name('checkout.payment.failed');
 
-    Route::post('buy-now', [OrderController::class, 'buyNow'])->name('buy.now');
-    Route::post('buy-now/pay', [OrderController::class, 'buyNowPay'])->name('buy.now.pay');
+    // Route::post('buy-now', [OrderController::class, 'buyNow'])->name('buy.now');
+    // Route::post('buy-now/pay', [OrderController::class, 'buyNowPay'])->name('buy.now.pay');
 
     /* ---------------- RAZORPAY (SESSION / PLAN FLOW) ---------------- */
     Route::post('submit-booking', [PaymentController::class, 'submitBooking']);

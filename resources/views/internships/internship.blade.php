@@ -1006,7 +1006,8 @@
 <div class="internship-cta">
     <div class="cta-buttons">
         <a href="https://forms.gle/kutdx7J5BpMr15gr8" target="_blank" class="cta-btn primary">Apply Now</a>
-        <a href="javascript:void(0)" id="downloadBrochureBtn" class="cta-btn secondary">Download Brochure</a>
+        <!-- <a href="javascript:void(0)" id="downloadBrochureBtn" class="cta-btn secondary">Download Brochure</a> -->
+        <a href="{{ asset('assets/images/coordinators/MindRewire_Psychology_Internship_Brochure_FINAL.pdf') }}" download="MindRewire-Internship-Brochure.pdf" class="cta-btn secondary">Download Brochure</a>
     </div>
     <p class="cta-text">Learn more about how we shape <strong>Psychologists in the Making</strong> through our hands-on internship program.</p>
 </div>
@@ -1185,7 +1186,7 @@
 <!-- =========================
      BROCHURE MODAL
 ========================== -->
-
+<!-- 
 <div class="brochure-overlay" id="brochureOverlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="brochureModalTitle">
 
     <div class="brochure-modal-box" id="brochureBox">
@@ -1414,6 +1415,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
-</script>
+</script> -->
 
 @endsection

@@ -127,7 +127,7 @@ return [
     |--------------------------------------------------------------------------
     */
     'admin_email' => env('ADMIN_ORDER_EMAIL', 'team.mindrewire@gmail.com'),
-    'admin_email' => 'team.mindrewire@gmail.com',
+    // 'admin_email' => 'team.mindrewire@gmail.com',
 
 
 
